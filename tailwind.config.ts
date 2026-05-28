@@ -12,12 +12,13 @@ const config: Config = {
         paper: "#fbfaf8",
         hairline: "#e7e4df",
         muted: "#8a857c",
-        // Low-saturation editorial accents for the five trend pillars.
-        art: "#c9a8e0",
-        fashion: "#f2a6c0",
-        entertainment: "#9fc5e8",
-        innovation: "#a8e0c5",
-        "pop-culture": "#f4c98a",
+        // Editorial accents for the five trend pillars — saturated enough to
+        // read as filled color blocks with dark text, still low-key.
+        art: "#b48fd6",
+        fashion: "#ec8fb0",
+        entertainment: "#7eb3e6",
+        innovation: "#82d2ad",
+        "pop-culture": "#f0b95f",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],

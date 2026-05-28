@@ -104,7 +104,7 @@ export default function CalendarMatrix({
           return (
             <div
               key={key}
-              className={`min-h-[112px] border-hairline p-2 ${
+              className={`min-h-[132px] border-hairline p-2 ${
                 lastCol ? "" : "border-r"
               } ${lastRow ? "" : "border-b"} ${
                 cell.inMonth ? "bg-white" : "bg-paper/60"
@@ -132,14 +132,12 @@ export default function CalendarMatrix({
                     <button
                       key={e.id}
                       onClick={() => onSelect(e)}
-                      title={`${e.title} · impact ${e.impactScore}/10`}
-                      className={`group flex w-full items-center gap-1.5 rounded px-1.5 py-1 text-left text-[11px] leading-tight transition-colors ${
-                        selected ? "bg-ink text-paper" : "hover:bg-paper"
+                      title={`${cat.emoji} ${cat.label} · ${e.title} · impact ${e.impactScore}/10`}
+                      style={{ backgroundColor: cat.accent }}
+                      className={`flex w-full items-center gap-1 rounded px-1.5 py-1 text-left text-[11px] font-medium leading-tight text-ink shadow-sm transition hover:brightness-95 ${
+                        selected ? "ring-2 ring-ink ring-offset-1 ring-offset-white" : ""
                       }`}
                     >
-                      <span
-                        className={`h-2 w-2 shrink-0 rounded-full ${cat.dotClass}`}
-                      />
                       <span className="truncate">{e.title}</span>
                     </button>
                   );
@@ -147,7 +145,7 @@ export default function CalendarMatrix({
                 {dayEvents.length > 3 && (
                   <button
                     onClick={() => onSelect(dayEvents[3])}
-                    className="px-1.5 text-[10px] uppercase tracking-wide text-muted hover:text-ink"
+                    className="w-full rounded px-1.5 py-0.5 text-left text-[10px] font-medium uppercase tracking-wide text-muted hover:bg-paper hover:text-ink"
                   >
                     +{dayEvents.length - 3} more
                   </button>
