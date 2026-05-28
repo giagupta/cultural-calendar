@@ -75,24 +75,24 @@ export default function AnnouncementsRail({
                 }`}
               >
                 <div className="mb-2 flex items-center justify-between gap-2">
-                  <span className="flex items-center gap-1.5 text-[11px] text-muted">
-                    <span className={`h-2 w-2 rounded-full ${cat.dotClass}`} />
+                  <span className="flex items-center gap-1.5 text-xs text-muted">
+                    <span className={`h-2.5 w-2.5 rounded-full ${cat.dotClass}`} />
                     {cat.emoji} {cat.label}
                   </span>
                   <StatusBadge status={e.status} />
                 </div>
 
-                <p className="line-clamp-2 text-[13px] font-medium leading-snug text-ink">
+                <p className="line-clamp-2 text-[15px] font-semibold leading-snug text-ink">
                   {e.title}
                 </p>
 
                 {e.headliners && e.headliners.length > 0 && (
-                  <p className="mt-1 line-clamp-1 text-[11px] text-muted">
+                  <p className="mt-1.5 line-clamp-1 text-[13px] text-muted">
                     {e.headliners.slice(0, 3).join(", ")}
                   </p>
                 )}
 
-                <div className="mt-auto flex items-center justify-between pt-3 text-[10px] uppercase tracking-wide">
+                <div className="mt-auto flex items-center justify-between pt-3 text-[11px] uppercase tracking-wide">
                   <span className="text-muted">
                     📣 {relativeAnnounced(e.announcedDate!)}
                   </span>

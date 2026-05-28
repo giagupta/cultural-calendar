@@ -77,13 +77,13 @@ export default function FilterControls({
               key={c.id}
               onClick={() => onToggleCategory(c.id)}
               aria-pressed={active}
-              className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs transition-all ${
+              className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-sm transition-all ${
                 active
                   ? c.chipClass
                   : "text-muted ring-1 ring-hairline hover:text-ink"
               }`}
             >
-              <span className={`h-2 w-2 rounded-full ${c.dotClass}`} />
+              <span className={`h-2.5 w-2.5 rounded-full ${c.dotClass}`} />
               {c.emoji} {c.label}
             </button>
           );
@@ -106,8 +106,8 @@ export default function FilterControls({
           onChange={(e) => onMinImpactChange(Number(e.target.value))}
           className="h-1 w-48 cursor-pointer appearance-none rounded-full bg-hairline accent-ink"
         />
-        <span className="w-6 text-sm font-medium tabular-nums">{minImpact}</span>
-        <span className="text-xs text-muted">/ 10</span>
+        <span className="w-6 text-base font-medium tabular-nums">{minImpact}</span>
+        <span className="text-sm text-muted">/ 10</span>
       </div>
     </div>
   );

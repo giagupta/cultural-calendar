@@ -36,7 +36,7 @@ export default function AgendaView({ events, onSelect, selectedId }: AgendaViewP
   if (!events.length) {
     return (
       <div className="rounded-lg border border-dashed border-hairline bg-white py-20 text-center">
-        <p className="text-sm text-muted">
+        <p className="text-base text-muted">
           No events match the current filters.
         </p>
       </div>
@@ -47,7 +47,7 @@ export default function AgendaView({ events, onSelect, selectedId }: AgendaViewP
     <div className="space-y-8">
       {groups.map((group) => (
         <section key={group.label}>
-          <h3 className="mb-3 font-serif text-lg text-muted">{group.label}</h3>
+          <h3 className="mb-3 font-serif text-xl text-muted">{group.label}</h3>
           <ul className="divide-y divide-hairline rounded-lg border border-hairline bg-white">
             {group.items.map((e) => {
               const cat = getCategory(e.category);
@@ -60,22 +60,22 @@ export default function AgendaView({ events, onSelect, selectedId }: AgendaViewP
                       selected ? "bg-paper" : "hover:bg-paper/70"
                     }`}
                   >
-                    <span className={`h-10 w-1 shrink-0 rounded-full ${cat.railClass}`} />
+                    <span className={`h-12 w-1.5 shrink-0 rounded-full ${cat.railClass}`} />
 
                     <div className="w-28 shrink-0">
-                      <p className="text-sm font-medium tabular-nums text-ink">
+                      <p className="text-[15px] font-medium tabular-nums text-ink">
                         {formatDateRange(e)}
                       </p>
                     </div>
 
                     <div className="min-w-0 flex-1">
-                      <p className="flex items-center gap-2 truncate text-[15px] text-ink">
+                      <p className="flex items-center gap-2 truncate text-base font-medium text-ink">
                         <span className="truncate">{e.title}</span>
                         {e.status && e.status !== "confirmed" && (
                           <StatusBadge status={e.status} className="shrink-0" />
                         )}
                       </p>
-                      <p className="truncate text-xs text-muted">
+                      <p className="truncate text-sm text-muted">
                         {cat.emoji} {cat.label} · {e.subCategory}
                         {e.headliners && e.headliners.length > 0 && (
                           <span className="text-ink/70">
@@ -88,7 +88,7 @@ export default function AgendaView({ events, onSelect, selectedId }: AgendaViewP
 
                     <div className="hidden shrink-0 items-center gap-3 sm:flex">
                       <ImpactMeter score={e.impactScore} accent={cat.accent} />
-                      <span className="w-8 text-right text-sm tabular-nums text-ink">
+                      <span className="w-8 text-right text-base font-medium tabular-nums text-ink">
                         {e.impactScore}
                       </span>
                     </div>

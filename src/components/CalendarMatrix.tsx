@@ -86,7 +86,7 @@ export default function CalendarMatrix({
         {WEEKDAY_LABELS.map((w) => (
           <div
             key={w}
-            className="px-3 py-2 text-[11px] uppercase tracking-editorial text-muted"
+            className="px-3 py-2.5 text-xs font-medium uppercase tracking-wide text-muted"
           >
             {w}
           </div>
@@ -104,7 +104,7 @@ export default function CalendarMatrix({
           return (
             <div
               key={key}
-              className={`min-h-[132px] border-hairline p-2 ${
+              className={`min-h-[156px] border-hairline p-2 ${
                 lastCol ? "" : "border-r"
               } ${lastRow ? "" : "border-b"} ${
                 cell.inMonth ? "bg-white" : "bg-paper/60"
@@ -112,7 +112,7 @@ export default function CalendarMatrix({
             >
               <div className="mb-1.5 flex items-center justify-between">
                 <span
-                  className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs tabular-nums ${
+                  className={`inline-flex h-7 w-7 items-center justify-center rounded-full text-sm tabular-nums ${
                     isToday
                       ? "bg-ink font-medium text-paper"
                       : cell.inMonth
@@ -134,7 +134,7 @@ export default function CalendarMatrix({
                       onClick={() => onSelect(e)}
                       title={`${cat.emoji} ${cat.label} · ${e.title} · impact ${e.impactScore}/10`}
                       style={{ backgroundColor: cat.accent }}
-                      className={`flex w-full items-center gap-1 rounded px-1.5 py-1 text-left text-[11px] font-medium leading-tight text-ink shadow-sm transition hover:brightness-95 ${
+                      className={`flex w-full items-center gap-1 rounded px-2 py-1.5 text-left text-[13px] font-semibold leading-snug text-ink shadow-sm transition hover:brightness-95 ${
                         selected ? "ring-2 ring-ink ring-offset-1 ring-offset-white" : ""
                       }`}
                     >
@@ -145,7 +145,7 @@ export default function CalendarMatrix({
                 {dayEvents.length > 3 && (
                   <button
                     onClick={() => onSelect(dayEvents[3])}
-                    className="w-full rounded px-1.5 py-0.5 text-left text-[10px] font-medium uppercase tracking-wide text-muted hover:bg-paper hover:text-ink"
+                    className="w-full rounded px-2 py-1 text-left text-xs font-semibold uppercase tracking-wide text-muted hover:bg-paper hover:text-ink"
                   >
                     +{dayEvents.length - 3} more
                   </button>

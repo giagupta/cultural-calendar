@@ -147,7 +147,7 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
         <h1 className="mt-2 font-serif text-4xl leading-tight text-ink sm:text-5xl">
           Cultural Calendar
         </h1>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
           A color-coded intelligence layer tracking the intersections of art,
           fashion, entertainment, innovation, and pop culture — surfacing the
           strategic windows where high-end brands can collaborate.

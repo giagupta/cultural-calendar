@@ -18,7 +18,7 @@
 
   /* Editorial section eyebrow */
   .eyebrow {
-    @apply text-[11px] uppercase tracking-editorial text-muted;
+    @apply text-xs uppercase tracking-editorial text-muted;
   }
 }
 
