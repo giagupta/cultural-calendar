@@ -17,6 +17,15 @@ const DATA_FILE = path.join(DATA_DIR, "events.json");
 
 let writeChain: Promise<unknown> = Promise.resolve();
 
+/**
+ * In-memory fallback store. On read-only filesystems (many serverless / preview
+ * hosts), `fs.writeFile` throws — so once a write fails we keep mutations in
+ * memory for the lifetime of the process. Reads then come from memory too, so
+ * sync and CRUD still work for the session even when the disk isn't writable.
+ */
+let memoryStore: CulturalEvent[] | null = null;
+let warnedReadOnly = false;
+
 function isValidCategory(value: unknown): value is CategoryId {
   return (
     value === "art" ||
@@ -37,9 +46,11 @@ async function ensureFile(): Promise<void> {
 }
 
 export async function readAll(): Promise<CulturalEvent[]> {
-  await ensureFile();
-  const raw = await fs.readFile(DATA_FILE, "utf-8");
+  // Once we've fallen back to memory (read-only disk), serve from it.
+  if (memoryStore !== null) return memoryStore.map((e) => ({ ...e }));
   try {
+    await ensureFile();
+    const raw = await fs.readFile(DATA_FILE, "utf-8");
     const parsed = JSON.parse(raw);
     return Array.isArray(parsed) ? (parsed as CulturalEvent[]) : [];
   } catch {
@@ -52,8 +63,30 @@ async function persist(events: CulturalEvent[]): Promise<void> {
   const sorted = [...events].sort((a, b) =>
     a.startDate.localeCompare(b.startDate),
   );
-  await ensureFile();
-  await fs.writeFile(DATA_FILE, JSON.stringify(sorted, null, 2) + "\n", "utf-8");
+  // Already in memory-only mode → just update the in-memory copy.
+  if (memoryStore !== null) {
+    memoryStore = sorted;
+    return;
+  }
+  try {
+    await ensureFile();
+    await fs.writeFile(
+      DATA_FILE,
+      JSON.stringify(sorted, null, 2) + "\n",
+      "utf-8",
+    );
+  } catch (err) {
+    // Filesystem isn't writable — fall back to an in-memory store so the app
+    // keeps working (e.g. on read-only serverless hosting).
+    memoryStore = sorted;
+    if (!warnedReadOnly) {
+      warnedReadOnly = true;
+      console.warn(
+        "[db] data file is not writable; using in-memory store for this session.",
+        err instanceof Error ? err.message : err,
+      );
+    }
+  }
 }
 
 /** Run a read-modify-write mutation atomically with respect to other writers. */

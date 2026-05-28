@@ -106,20 +106,22 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
     setSyncing(true);
     try {
       const res = await fetch("/api/events/sync", { method: "POST" });
-      const data = await res.json();
-      await refetch();
+      const data = await res.json().catch(() => ({}));
       if (res.ok) {
+        await refetch();
         setToast(
           `Synced — ${data.added} new, ${data.updated} refreshed, ${data.skipped} curated kept`,
         );
       } else {
-        setToast("Sync failed");
+        setToast(data?.error ? `Sync failed: ${data.error}` : "Sync failed");
       }
-    } catch {
-      setToast("Sync failed — is the server running?");
+    } catch (err) {
+      setToast(
+        `Sync failed — ${err instanceof Error ? err.message : "network error"}`,
+      );
     } finally {
       setSyncing(false);
-      setTimeout(() => setToast(null), 4000);
+      setTimeout(() => setToast(null), 5000);
     }
   }, [refetch]);
 

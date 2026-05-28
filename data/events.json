@@ -9,11 +9,21 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-03-25",
-    "headliners": ["Tim Cook", "Craig Federighi", "Apple Intelligence platform"],
+    "headliners": [
+      "Tim Cook",
+      "Craig Federighi",
+      "Apple Intelligence platform"
+    ],
     "description": "Apple's annual developer keynote, expected to center on the next wave of on-device Apple Intelligence and a refreshed design language across visionOS and iOS.",
-    "commercialDrivers": ["Apple", "App Store ecosystem", "Developer community"],
+    "commercialDrivers": [
+      "Apple",
+      "App Store ecosystem",
+      "Developer community"
+    ],
     "partnershipAngle": "Saturated tech-press window. Hardware-adjacent fashion-tech or accessory brands can ride the launch news cycle with a complementary drop.",
-    "sourceUrls": ["https://developer.apple.com/wwdc"]
+    "sourceUrls": [
+      "https://developer.apple.com/wwdc"
+    ]
   },
   {
     "id": "seed-fashion-pitti-94",
@@ -25,11 +35,19 @@
     "impactScore": 7,
     "status": "confirmed",
     "announcedDate": "2026-03-10",
-    "headliners": ["Guest Designer (special project)", "Florence streetwear set"],
+    "headliners": [
+      "Guest Designer (special project)",
+      "Florence streetwear set"
+    ],
     "description": "Florence's twice-yearly menswear convergence — buyers, street-style photographers, and a rotating guest-designer showcase set the tailored-casual agenda.",
-    "commercialDrivers": ["Pitti Immagine", "Independent menswear labels"],
+    "commercialDrivers": [
+      "Pitti Immagine",
+      "Independent menswear labels"
+    ],
     "partnershipAngle": "Buyers and editors in one piazza. Strong window for a capsule drop targeting the elevated-menswear segment.",
-    "sourceUrls": ["https://www.pittimmagine.com"]
+    "sourceUrls": [
+      "https://www.pittimmagine.com"
+    ]
   },
   {
     "id": "seed-art-basel-2026",
@@ -41,11 +59,22 @@
     "impactScore": 9,
     "status": "confirmed",
     "announcedDate": "2026-02-14",
-    "headliners": ["Hauser & Wirth", "Gagosian", "David Zwirner", "UBS (Lead Partner)"],
+    "headliners": [
+      "Hauser & Wirth",
+      "Gagosian",
+      "David Zwirner",
+      "UBS (Lead Partner)"
+    ],
     "description": "The flagship edition of Art Basel and the densest concentration of UHNW collectors on the calendar, anchored by mega-gallery booths and the Unlimited sector.",
-    "commercialDrivers": ["MCH Group", "UBS", "BMW Art Journey"],
+    "commercialDrivers": [
+      "MCH Group",
+      "UBS",
+      "BMW Art Journey"
+    ],
     "partnershipAngle": "Ideal for invite-only salon activations and patron-tier capsule reveals to the highest-net-worth audience of the year.",
-    "sourceUrls": ["https://www.artbasel.com"]
+    "sourceUrls": [
+      "https://www.artbasel.com"
+    ]
   },
   {
     "id": "seed-ent-toy-story-5",
@@ -56,11 +85,20 @@
     "impactScore": 9,
     "status": "confirmed",
     "announcedDate": "2026-01-20",
-    "headliners": ["Tom Hanks (Woody)", "Tim Allen (Buzz)", "Pixar Animation Studios"],
+    "headliners": [
+      "Tom Hanks (Woody)",
+      "Tim Allen (Buzz)",
+      "Pixar Animation Studios"
+    ],
     "description": "Pixar's return to its flagship franchise. Reportedly pits the toys against a piece of kid-tech, teeing up a deep licensing and toy-tie-in pipeline.",
-    "commercialDrivers": ["Pixar / Disney", "Toy & QSR licensing partners"],
-    "partnershipAngle": "Multi-generational reach with an enormous merch funnel — best for accessible-luxury kidswear or collectible capsule plays.",
-    "sourceUrls": ["https://www.pixar.com"]
+    "commercialDrivers": [
+      "Pixar / Disney",
+      "Toy & QSR licensing partners"
+    ],
+    "partnershipAngle": "For Target: a Pixar tentpole is a toy-aisle and family-retail event. A Target-exclusive Toy Story 5 collection — toys, kids' apparel, and home — with in-store experiences captures the family-shopping surge the June release sets up.",
+    "sourceUrls": [
+      "https://www.pixar.com"
+    ]
   },
   {
     "id": "seed-fashion-paris-mens-ss27",
@@ -72,11 +110,20 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-04-02",
-    "headliners": ["Louis Vuitton (Pharrell Williams)", "Dior Men", "Loewe"],
+    "headliners": [
+      "Louis Vuitton (Pharrell Williams)",
+      "Dior Men",
+      "Loewe"
+    ],
     "description": "Spring/Summer 2027 menswear shows. Pharrell's LV spectacles continue to function as celebrity-dense cultural tentpoles beyond the runway itself.",
-    "commercialDrivers": ["Fédération de la Haute Couture", "LVMH maisons"],
+    "commercialDrivers": [
+      "Fédération de la Haute Couture",
+      "LVMH maisons"
+    ],
     "partnershipAngle": "Front-row seeding and show-set co-design generate the season's highest menswear earned-media multiples.",
-    "sourceUrls": ["https://www.fhcm.paris"]
+    "sourceUrls": [
+      "https://www.fhcm.paris"
+    ]
   },
   {
     "id": "seed-fashion-indie-atelier-noir",
@@ -87,11 +134,19 @@
     "impactScore": 6,
     "status": "confirmed",
     "announcedDate": "2026-05-12",
-    "headliners": ["Founder-designer (LVMH Prize nominee)", "Selfridges (exclusive stockist)"],
+    "headliners": [
+      "Founder-designer (LVMH Prize nominee)",
+      "Selfridges (exclusive stockist)"
+    ],
     "description": "Cult independent label with an LVMH Prize-shortlist pedigree drops a tightly-limited capsule, stocked exclusively at Selfridges for the launch window.",
-    "commercialDrivers": ["ATELIER NOIR", "Selfridges"],
-    "partnershipAngle": "Early-stage co-sign buys authentic subculture credibility cheaply, before the label scales out of reach.",
-    "sourceUrls": ["https://www.businessoffashion.com"]
+    "commercialDrivers": [
+      "ATELIER NOIR",
+      "Selfridges"
+    ],
+    "partnershipAngle": "For Target: democratizing buzzy independent design is Target's signature move. A Target-exclusive ATELIER NOIR diffusion line — the designer's aesthetic at a mass price — extends Target's celebrated designer-collab legacy to a cult emerging name.",
+    "sourceUrls": [
+      "https://www.businessoffashion.com"
+    ]
   },
   {
     "id": "seed-innov-luxury-auto-collab",
@@ -102,11 +157,21 @@
     "impactScore": 8,
     "status": "rumored",
     "announcedDate": "2026-05-09",
-    "headliners": ["Heritage automaker", "Maison de couture", "Celebrity ambassador (TBC)"],
+    "headliners": [
+      "Heritage automaker",
+      "Maison de couture",
+      "Celebrity ambassador (TBC)"
+    ],
     "description": "A rumored limited-run collaboration pairing a heritage automaker's craftsmanship with a couture house's atelier — interior trims, a capsule travel line, and a co-branded launch film.",
-    "commercialDrivers": ["Heritage automaker", "Maison de couture", "Creative agency"],
+    "commercialDrivers": [
+      "Heritage automaker",
+      "Maison de couture",
+      "Creative agency"
+    ],
     "partnershipAngle": "Textbook co-branding: shared craftsmanship language, limited units, cross-loyalty CRM activation across two UHNW lists.",
-    "sourceUrls": ["https://www.hypebeast.com"]
+    "sourceUrls": [
+      "https://www.hypebeast.com"
+    ]
   },
   {
     "id": "seed-pop-glastonbury-2026",
@@ -118,11 +183,21 @@
     "impactScore": 9,
     "status": "rumored",
     "announcedDate": "2026-05-18",
-    "headliners": ["Pyramid Stage headliners (rumored)", "Olivia Rodrigo", "The 1975"],
+    "headliners": [
+      "Pyramid Stage headliners (rumored)",
+      "Olivia Rodrigo",
+      "The 1975"
+    ],
     "description": "Worthy Farm returns with a rumored bill heavy on pop crossover acts. Festival fashion and the BBC broadcast turn the weekend into a multi-day style-content engine.",
-    "commercialDrivers": ["Festival organizers", "Headline artists", "BBC broadcast"],
-    "partnershipAngle": "Talent-seeding and on-site lounges convert directly to massive UGC reach across the festival-fashion trend cycle.",
-    "sourceUrls": ["https://www.glastonburyfestivals.co.uk"]
+    "commercialDrivers": [
+      "Festival organizers",
+      "Headline artists",
+      "BBC broadcast"
+    ],
+    "partnershipAngle": "For Tinder: festivals are peak match-and-meet-IRL season. A Glastonbury 'Festival Mode' with on-site icebreakers and a branded meetup lounge turns five days of densely-packed singles into record swipe-and-meet volume and a flood of organic UGC.",
+    "sourceUrls": [
+      "https://www.glastonburyfestivals.co.uk"
+    ]
   },
   {
     "id": "seed-fashion-couture-fw26",
@@ -134,11 +209,21 @@
     "impactScore": 10,
     "status": "confirmed",
     "announcedDate": "2026-04-15",
-    "headliners": ["Chanel", "Schiaparelli (Daniel Roseberry)", "Dior", "Maison Margiela"],
+    "headliners": [
+      "Chanel",
+      "Schiaparelli (Daniel Roseberry)",
+      "Dior",
+      "Maison Margiela"
+    ],
     "description": "The apex of fashion authority. Schiaparelli's surrealist sets and Chanel's couture salon remain the most screenshot-heavy moments of the fashion year.",
-    "commercialDrivers": ["Fédération de la Haute Couture", "Couture maisons"],
+    "commercialDrivers": [
+      "Fédération de la Haute Couture",
+      "Couture maisons"
+    ],
     "partnershipAngle": "Front-row seeding and atelier collaborations generate the year's single highest earned-media multiples.",
-    "sourceUrls": ["https://www.fhcm.paris"]
+    "sourceUrls": [
+      "https://www.fhcm.paris"
+    ]
   },
   {
     "id": "seed-ent-the-odyssey",
@@ -149,11 +234,24 @@
     "impactScore": 10,
     "status": "confirmed",
     "announcedDate": "2026-02-01",
-    "headliners": ["Matt Damon", "Tom Holland", "Zendaya", "Anne Hathaway", "Robert Pattinson", "dir. Christopher Nolan"],
+    "headliners": [
+      "Matt Damon",
+      "Tom Holland",
+      "Zendaya",
+      "Anne Hathaway",
+      "Robert Pattinson",
+      "dir. Christopher Nolan"
+    ],
     "description": "Nolan's IMAX-shot mythological epic, carrying the year's most stacked ensemble. Expected to dominate the summer conversation and the eventual awards runway.",
-    "commercialDrivers": ["Universal Pictures", "A-list ensemble cast", "IMAX"],
+    "commercialDrivers": [
+      "Universal Pictures",
+      "A-list ensemble cast",
+      "IMAX"
+    ],
     "partnershipAngle": "Premiere red-carpet dressing of this cast converts directly to search lift; wardrobe and watch placements reach a global prestige audience.",
-    "sourceUrls": ["https://www.boxofficemojo.com"]
+    "sourceUrls": [
+      "https://www.boxofficemojo.com"
+    ]
   },
   {
     "id": "seed-pop-tomorrowland-2026",
@@ -165,11 +263,22 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-04-22",
-    "headliners": ["Martin Garrix", "Charlotte de Witte", "Swedish House Mafia", "Anyma"],
+    "headliners": [
+      "Martin Garrix",
+      "Charlotte de Witte",
+      "Swedish House Mafia",
+      "Anyma"
+    ],
     "description": "Boom, Belgium's mega-production EDM festival with a heavy global livestream footprint and a deeply branded set-design culture.",
-    "commercialDrivers": ["Festival organizers", "Global DJ roster", "Livestream partners"],
-    "partnershipAngle": "Gen-Z global reach with built-in livestream impressions — strong for digital-first, experiential, and merch-drop activations.",
-    "sourceUrls": ["https://www.tomorrowland.com"]
+    "commercialDrivers": [
+      "Festival organizers",
+      "Global DJ roster",
+      "Livestream partners"
+    ],
+    "partnershipAngle": "For Spotify: the world's biggest EDM brand is an audio-streaming goldmine. Official per-stage playlists, set recordings, and pre-event artist takeovers convert Tomorrowland's global livestream audience straight into Spotify listening and discovery lift.",
+    "sourceUrls": [
+      "https://www.tomorrowland.com"
+    ]
   },
   {
     "id": "seed-innov-sneaker-collab",
@@ -180,11 +289,21 @@
     "impactScore": 7,
     "status": "rumored",
     "announcedDate": "2026-05-06",
-    "headliners": ["Global sportswear brand", "Streetwear designer", "StockX / GOAT resale"],
+    "headliners": [
+      "Global sportswear brand",
+      "Streetwear designer",
+      "StockX / GOAT resale"
+    ],
     "description": "A rumored hype drop pairing a global sportswear brand with a buzzy streetwear designer, structured as a scarce numbered release with raffle access.",
-    "commercialDrivers": ["Global sportswear brand", "Streetwear designer", "Resale platforms"],
+    "commercialDrivers": [
+      "Global sportswear brand",
+      "Streetwear designer",
+      "Resale platforms"
+    ],
     "partnershipAngle": "Hype-drop mechanics drive resale velocity; scarcity plus designer cachet creates built-in secondary-market storytelling.",
-    "sourceUrls": ["https://www.hypebeast.com"]
+    "sourceUrls": [
+      "https://www.hypebeast.com"
+    ]
   },
   {
     "id": "seed-pop-comic-con-2026",
@@ -196,11 +315,21 @@
     "impactScore": 7,
     "status": "confirmed",
     "announcedDate": "2026-03-30",
-    "headliners": ["Hall H studio panels", "Marvel Studios", "DC Studios"],
+    "headliners": [
+      "Hall H studio panels",
+      "Marvel Studios",
+      "DC Studios"
+    ],
     "description": "The genre-entertainment supershow where studios reveal slates and trailers. Hall H reveals routinely set the fandom agenda for the next 18 months.",
-    "commercialDrivers": ["Studios", "Streamers", "Collectible & toy partners"],
+    "commercialDrivers": [
+      "Studios",
+      "Streamers",
+      "Collectible & toy partners"
+    ],
     "partnershipAngle": "Fandom-collectible crossover; limited con-exclusive merch and IP-licensed capsules land with high-intent superfans.",
-    "sourceUrls": ["https://www.comic-con.org"]
+    "sourceUrls": [
+      "https://www.comic-con.org"
+    ]
   },
   {
     "id": "seed-ent-animation-family",
@@ -211,11 +340,19 @@
     "impactScore": 7,
     "status": "projected",
     "announcedDate": "2026-05-14",
-    "headliners": ["Voice ensemble (TBC)", "Animation studio"],
+    "headliners": [
+      "Voice ensemble (TBC)",
+      "Animation studio"
+    ],
     "description": "A projected late-July animated sequel slotting into the family-tentpole window, with the usual deep toy and QSR licensing runway.",
-    "commercialDrivers": ["Animation studio", "QSR & toy licensing partners"],
-    "partnershipAngle": "Accessible-luxury kidswear or collectible capsule plays benefit from the multi-generational reach.",
-    "sourceUrls": ["https://www.the-numbers.com"]
+    "commercialDrivers": [
+      "Animation studio",
+      "QSR & toy licensing partners"
+    ],
+    "partnershipAngle": "For Target: family animation drives the toy and kids'-apparel categories Target owns. A Target-exclusive capsule and endcap program turns the release into a destination-shopping moment for parents.",
+    "sourceUrls": [
+      "https://www.the-numbers.com"
+    ]
   },
   {
     "id": "seed-pop-lollapalooza-2026",
@@ -227,11 +364,21 @@
     "impactScore": 8,
     "status": "rumored",
     "announcedDate": "2026-05-04",
-    "headliners": ["Headliners (rumored)", "Sabrina Carpenter", "Tyler, The Creator"],
+    "headliners": [
+      "Headliners (rumored)",
+      "Sabrina Carpenter",
+      "Tyler, The Creator"
+    ],
     "description": "Grant Park's four-day flagship, a magnet for brand activations and the US summer's most photographed festival-style moment.",
-    "commercialDrivers": ["C3 Presents", "Headline artists", "Brand activation row"],
-    "partnershipAngle": "Dense on-site brand-activation culture; an experiential lounge plus talent-seeding scales UGC reach fast.",
-    "sourceUrls": ["https://www.lollapalooza.com"]
+    "commercialDrivers": [
+      "C3 Presents",
+      "Headline artists",
+      "Brand activation row"
+    ],
+    "partnershipAngle": "For Tinder: Grant Park concentrates hundreds of thousands of young singles for four days — squarely Tinder's 18–28 core. A festival-only mode with lineup-based prompts and an on-site meetup deck maps directly to Tinder's IRL-connection push.",
+    "sourceUrls": [
+      "https://www.lollapalooza.com"
+    ]
   },
   {
     "id": "seed-fashion-copenhagen-ss27",
@@ -243,11 +390,21 @@
     "impactScore": 7,
     "status": "confirmed",
     "announcedDate": "2026-04-18",
-    "headliners": ["Ganni", "Stine Goya", "Saks Potts"],
+    "headliners": [
+      "Ganni",
+      "Stine Goya",
+      "Saks Potts"
+    ],
     "description": "The most credible sustainability-forward fashion-week platform, with binding sustainability requirements for participating brands.",
-    "commercialDrivers": ["Ganni", "Scandinavian labels", "CPHFW sustainability board"],
-    "partnershipAngle": "Aligns a brand's ESG narrative with the industry's most credible green-fashion stage.",
-    "sourceUrls": ["https://copenhagenfashionweek.com"]
+    "commercialDrivers": [
+      "Ganni",
+      "Scandinavian labels",
+      "CPHFW sustainability board"
+    ],
+    "partnershipAngle": "For Target: CPHFW is the credibility stamp for accessible, sustainable style. A Target capsule co-designed with a Copenhagen label brings genuine Scandi-sustainability credentials to a mass American assortment.",
+    "sourceUrls": [
+      "https://copenhagenfashionweek.com"
+    ]
   },
   {
     "id": "seed-art-kusama-retrospective",
@@ -258,11 +415,19 @@
     "impactScore": 7,
     "status": "confirmed",
     "announcedDate": "2026-03-12",
-    "headliners": ["Yayoi Kusama", "Infinity Mirror Rooms"],
+    "headliners": [
+      "Yayoi Kusama",
+      "Infinity Mirror Rooms"
+    ],
     "description": "A major museum retrospective of Kusama's Infinity Rooms — among the most Instagrammed art experiences in the world, with timed-entry demand.",
-    "commercialDrivers": ["Host museum", "Corporate exhibition sponsor"],
+    "commercialDrivers": [
+      "Host museum",
+      "Corporate exhibition sponsor"
+    ],
     "partnershipAngle": "Opening night draws editorial density; a sponsored late-night view or co-branded catalogue earns durable cultural credibility.",
-    "sourceUrls": ["https://www.artforum.com"]
+    "sourceUrls": [
+      "https://www.artforum.com"
+    ]
   },
   {
     "id": "seed-innov-galaxy-unpacked",
@@ -273,11 +438,21 @@
     "impactScore": 8,
     "status": "projected",
     "announcedDate": "2026-05-02",
-    "headliners": ["Galaxy Z Fold", "Galaxy Z Flip", "Samsung Mobile"],
+    "headliners": [
+      "Galaxy Z Fold",
+      "Galaxy Z Flip",
+      "Samsung Mobile"
+    ],
     "description": "Samsung's late-summer foldables showcase, the anchor of the pre-iPhone Android news cycle and a fixture of fashion-tech accessory tie-ins.",
-    "commercialDrivers": ["Samsung", "Carrier partners", "Accessory makers"],
+    "commercialDrivers": [
+      "Samsung",
+      "Carrier partners",
+      "Accessory makers"
+    ],
     "partnershipAngle": "Foldable form factors invite fashion-house case and strap collaborations inside the unboxing economy.",
-    "sourceUrls": ["https://www.theverge.com"]
+    "sourceUrls": [
+      "https://www.theverge.com"
+    ]
   },
   {
     "id": "seed-ent-venice-film-2026",
@@ -289,11 +464,20 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-04-08",
-    "headliners": ["Golden Lion contenders", "Awards-season premieres"],
+    "headliners": [
+      "Golden Lion contenders",
+      "Awards-season premieres"
+    ],
     "description": "The Lido launches the awards season. Red-carpet dressing and the gondola-and-water-taxi aesthetic make it a couture-house showcase.",
-    "commercialDrivers": ["La Biennale di Venezia", "Studios & distributors", "Jaeger-LeCoultre (partner)"],
+    "commercialDrivers": [
+      "La Biennale di Venezia",
+      "Studios & distributors",
+      "Jaeger-LeCoultre (partner)"
+    ],
     "partnershipAngle": "Awards-season kickoff with heavy luxury-house red-carpet dressing; talent placement seeds months of coverage.",
-    "sourceUrls": ["https://www.labiennale.org/en/cinema"]
+    "sourceUrls": [
+      "https://www.labiennale.org/en/cinema"
+    ]
   },
   {
     "id": "seed-art-frieze-seoul-2026",
@@ -305,11 +489,20 @@
     "impactScore": 7,
     "status": "confirmed",
     "announcedDate": "2026-04-20",
-    "headliners": ["Frieze + Kiaf co-staging", "Global & Korean galleries"],
+    "headliners": [
+      "Frieze + Kiaf co-staging",
+      "Global & Korean galleries"
+    ],
     "description": "Frieze's Asia anchor, co-timed with Kiaf, at the heart of Seoul's surging luxury and K-culture market.",
-    "commercialDrivers": ["Frieze", "Korean luxury retail", "K-culture audience"],
+    "commercialDrivers": [
+      "Frieze",
+      "Korean luxury retail",
+      "K-culture audience"
+    ],
     "partnershipAngle": "Direct line into the K-luxury and collector audience; high-impact for brands courting the APAC art crowd.",
-    "sourceUrls": ["https://www.frieze.com"]
+    "sourceUrls": [
+      "https://www.frieze.com"
+    ]
   },
   {
     "id": "seed-innov-iphone-18",
@@ -320,11 +513,21 @@
     "impactScore": 9,
     "status": "projected",
     "announcedDate": "2026-05-20",
-    "headliners": ["iPhone 18 lineup", "Apple Intelligence", "Tim Cook"],
+    "headliners": [
+      "iPhone 18 lineup",
+      "Apple Intelligence",
+      "Tim Cook"
+    ],
     "description": "Apple's flagship September keynote — the single most-covered consumer-hardware moment of the year and the start of the holiday-tech cycle.",
-    "commercialDrivers": ["Apple", "Carrier partners", "Accessory ecosystem"],
+    "commercialDrivers": [
+      "Apple",
+      "Carrier partners",
+      "Accessory ecosystem"
+    ],
     "partnershipAngle": "Peak unboxing-economy window; premium case and fashion-tech collaborations land inside a saturated press cycle.",
-    "sourceUrls": ["https://www.apple.com"]
+    "sourceUrls": [
+      "https://www.apple.com"
+    ]
   },
   {
     "id": "seed-fashion-nyfw-ss27",
@@ -336,11 +539,21 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-05-01",
-    "headliners": ["Ralph Lauren", "Michael Kors", "Coach", "Khaite"],
+    "headliners": [
+      "Ralph Lauren",
+      "Michael Kors",
+      "Coach",
+      "Khaite"
+    ],
     "description": "The Spring/Summer 2027 womenswear circuit opens in New York, the most celebrity-and-influencer-front-row of the four weeks.",
-    "commercialDrivers": ["CFDA", "American luxury houses"],
-    "partnershipAngle": "Influencer-dense front rows; gifting and co-hosted after-parties scale earned reach efficiently.",
-    "sourceUrls": ["https://cfda.com"]
+    "commercialDrivers": [
+      "CFDA",
+      "American luxury houses"
+    ],
+    "partnershipAngle": "For Target: NYFW is the source for Target's designer-collaboration program. Signing an American runway name for a Target-exclusive collection — teased at the show, dropped weeks later — recreates the cheap-chic frenzy Target is known for.",
+    "sourceUrls": [
+      "https://cfda.com"
+    ]
   },
   {
     "id": "seed-ent-tiff-2026",
@@ -352,11 +565,19 @@
     "impactScore": 7,
     "status": "confirmed",
     "announcedDate": "2026-05-08",
-    "headliners": ["People's Choice contenders", "Awards-season premieres"],
+    "headliners": [
+      "People's Choice contenders",
+      "Awards-season premieres"
+    ],
     "description": "TIFF's People's Choice award is a leading Best Picture bellwether, making it a critical awards-season talent-dressing moment.",
-    "commercialDrivers": ["TIFF", "Studios & distributors"],
+    "commercialDrivers": [
+      "TIFF",
+      "Studios & distributors"
+    ],
     "partnershipAngle": "Awards-runway dressing opportunity earlier and less saturated than the Lido; good value for emerging luxury houses.",
-    "sourceUrls": ["https://www.tiff.net"]
+    "sourceUrls": [
+      "https://www.tiff.net"
+    ]
   },
   {
     "id": "seed-pop-vmas-2026",
@@ -367,11 +588,20 @@
     "impactScore": 7,
     "status": "projected",
     "announcedDate": "2026-05-16",
-    "headliners": ["Performers (TBC)", "Red-carpet looks"],
+    "headliners": [
+      "Performers (TBC)",
+      "Red-carpet looks"
+    ],
     "description": "The VMAs remain the most fashion-forward, screenshot-driven awards telecast — a proven engine for viral red-carpet and performance looks.",
-    "commercialDrivers": ["MTV / Paramount", "Performing artists", "Stylist agencies"],
-    "partnershipAngle": "Custom-dressing key talent seeds days of organic coverage off a single look.",
-    "sourceUrls": ["https://www.mtv.com/vma"]
+    "commercialDrivers": [
+      "MTV / Paramount",
+      "Performing artists",
+      "Stylist agencies"
+    ],
+    "partnershipAngle": "For Spotify: the VMAs index hard on Gen-Z music fandom. Performance-tied playlists and real-time 'now streaming' moments turn each viral performance into an immediate Spotify discovery loop.",
+    "sourceUrls": [
+      "https://www.mtv.com/vma"
+    ]
   },
   {
     "id": "seed-fashion-milan-ss27",
@@ -383,11 +613,21 @@
     "impactScore": 9,
     "status": "confirmed",
     "announcedDate": "2026-05-05",
-    "headliners": ["Prada", "Gucci", "Bottega Veneta", "Versace"],
+    "headliners": [
+      "Prada",
+      "Gucci",
+      "Bottega Veneta",
+      "Versace"
+    ],
     "description": "Milan's SS27 week, closely watched for how the year's new creative directors settle into their houses and reset each brand's codes.",
-    "commercialDrivers": ["Camera Nazionale della Moda", "Italian luxury houses"],
+    "commercialDrivers": [
+      "Camera Nazionale della Moda",
+      "Italian luxury houses"
+    ],
     "partnershipAngle": "A creative-director debut is a once-a-tenure media spike; aligning a co-branded moment to it borrows enormous attention.",
-    "sourceUrls": ["https://www.cameramoda.it"]
+    "sourceUrls": [
+      "https://www.cameramoda.it"
+    ]
   },
   {
     "id": "seed-fashion-paris-ss27",
@@ -399,11 +639,22 @@
     "impactScore": 10,
     "status": "confirmed",
     "announcedDate": "2026-05-10",
-    "headliners": ["Chanel", "Louis Vuitton", "Saint Laurent", "Loewe", "Valentino"],
+    "headliners": [
+      "Chanel",
+      "Louis Vuitton",
+      "Saint Laurent",
+      "Loewe",
+      "Valentino"
+    ],
     "description": "The closing and most powerful leg of the womenswear circuit. Paris sets the commercial and editorial agenda for the entire season.",
-    "commercialDrivers": ["Fédération de la Haute Couture", "LVMH & Kering maisons"],
+    "commercialDrivers": [
+      "Fédération de la Haute Couture",
+      "LVMH & Kering maisons"
+    ],
     "partnershipAngle": "The single most valuable front-row and show-set co-branding stage in fashion.",
-    "sourceUrls": ["https://www.fhcm.paris"]
+    "sourceUrls": [
+      "https://www.fhcm.paris"
+    ]
   },
   {
     "id": "seed-art-frieze-london-2026",
@@ -415,11 +666,21 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-05-11",
-    "headliners": ["Regent's Park tents", "Frieze Masters", "Deutsche Bank (partner)"],
+    "headliners": [
+      "Regent's Park tents",
+      "Frieze Masters",
+      "Deutsche Bank (partner)"
+    ],
     "description": "London's October art week, pairing contemporary Frieze with the historical Frieze Masters across Regent's Park.",
-    "commercialDrivers": ["Frieze", "Deutsche Bank", "London galleries"],
+    "commercialDrivers": [
+      "Frieze",
+      "Deutsche Bank",
+      "London galleries"
+    ],
     "partnershipAngle": "A patron-tier dinner or VIP-preview takeover reaches European collectors at the season's London peak.",
-    "sourceUrls": ["https://www.frieze.com"]
+    "sourceUrls": [
+      "https://www.frieze.com"
+    ]
   },
   {
     "id": "seed-art-basel-paris-2026",
@@ -431,11 +692,20 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-05-13",
-    "headliners": ["Grand Palais", "Global galleries", "Paris+ collector set"],
+    "headliners": [
+      "Grand Palais",
+      "Global galleries",
+      "Paris+ collector set"
+    ],
     "description": "Art Basel's Paris edition at the restored Grand Palais, now a fixture of the city's blue-chip autumn art-and-fashion overlap.",
-    "commercialDrivers": ["MCH Group", "Parisian luxury houses"],
+    "commercialDrivers": [
+      "MCH Group",
+      "Parisian luxury houses"
+    ],
     "partnershipAngle": "The art-fashion overlap in Paris is uniquely rich; co-hosted salons reach a shared luxury audience.",
-    "sourceUrls": ["https://www.artbasel.com/paris"]
+    "sourceUrls": [
+      "https://www.artbasel.com/paris"
+    ]
   },
   {
     "id": "seed-innov-lv-artist-collab",
@@ -446,11 +716,20 @@
     "impactScore": 7,
     "status": "rumored",
     "announcedDate": "2026-05-22",
-    "headliners": ["Louis Vuitton", "Contemporary artist (TBC)"],
+    "headliners": [
+      "Louis Vuitton",
+      "Contemporary artist (TBC)"
+    ],
     "description": "A rumored monogram-reinterpretation capsule pairing Louis Vuitton with a blue-chip contemporary artist, in the lineage of its Kusama and Murakami projects.",
-    "commercialDrivers": ["Louis Vuitton", "Artist studio", "LVMH"],
+    "commercialDrivers": [
+      "Louis Vuitton",
+      "Artist studio",
+      "LVMH"
+    ],
     "partnershipAngle": "Artist-collab capsules generate both fashion and art-world coverage — a dual-audience reach multiplier.",
-    "sourceUrls": ["https://www.hypebeast.com"]
+    "sourceUrls": [
+      "https://www.hypebeast.com"
+    ]
   },
   {
     "id": "seed-innov-gta-vi",
@@ -461,11 +740,20 @@
     "impactScore": 10,
     "status": "rumored",
     "announcedDate": "2026-05-25",
-    "headliners": ["Rockstar Games", "Take-Two Interactive", "Leonida / Vice City"],
+    "headliners": [
+      "Rockstar Games",
+      "Take-Two Interactive",
+      "Leonida / Vice City"
+    ],
     "description": "The most anticipated entertainment release of the decade. A GTA VI launch is a full-culture event — its in-game radio, fashion, and brand parodies set real-world trends.",
-    "commercialDrivers": ["Rockstar Games", "Take-Two Interactive"],
-    "partnershipAngle": "Gaming is now a primary fashion channel; in-world brand presence and IRL drop tie-ins reach a vast, young, high-engagement audience.",
-    "sourceUrls": ["https://www.rockstargames.com"]
+    "commercialDrivers": [
+      "Rockstar Games",
+      "Take-Two Interactive"
+    ],
+    "partnershipAngle": "For Spotify: GTA's in-game radio is one of music's biggest cultural tastemakers. A licensed 'stations of Vice City' playlist hub plus artist tie-ins ride the launch to a massive, young, music-obsessed audience.",
+    "sourceUrls": [
+      "https://www.rockstargames.com"
+    ]
   },
   {
     "id": "seed-pop-stadium-tour-2026",
@@ -477,11 +765,20 @@
     "impactScore": 8,
     "status": "rumored",
     "announcedDate": "2026-05-19",
-    "headliners": ["Headline pop artist (TBC)", "Stadium production"],
+    "headliners": [
+      "Headline pop artist (TBC)",
+      "Stadium production"
+    ],
     "description": "A rumored marquee stadium run whose tour fashion, friendship-bracelet, and merch economy reliably spills into mainstream retail trends.",
-    "commercialDrivers": ["Touring artist", "Live Nation", "Merch partners"],
-    "partnershipAngle": "Tour-stop pop-ups and artist-curated merch capsules tap an intensely loyal, high-spend fanbase city by city.",
-    "sourceUrls": ["https://www.billboard.com"]
+    "commercialDrivers": [
+      "Touring artist",
+      "Live Nation",
+      "Merch partners"
+    ],
+    "partnershipAngle": "For Spotify: a marquee tour is the strongest pre-show streaming driver there is. Setlist playlists, city-by-city artist pages, and ticket-holder fan moments compound listening across every stadium date.",
+    "sourceUrls": [
+      "https://www.billboard.com"
+    ]
   },
   {
     "id": "seed-art-basel-miami-2026",
@@ -493,11 +790,21 @@
     "impactScore": 9,
     "status": "confirmed",
     "announcedDate": "2026-05-15",
-    "headliners": ["Miami Beach Convention Center", "Global galleries", "Design Miami"],
+    "headliners": [
+      "Miami Beach Convention Center",
+      "Global galleries",
+      "Design Miami"
+    ],
     "description": "The Americas' flagship fair and the year's biggest art-meets-nightlife-meets-brand convergence, with Design Miami and a week of activations alongside.",
-    "commercialDrivers": ["MCH Group", "Miami hospitality & nightlife", "Brand activations"],
+    "commercialDrivers": [
+      "MCH Group",
+      "Miami hospitality & nightlife",
+      "Brand activations"
+    ],
     "partnershipAngle": "The densest brand-activation week in the art calendar; experiential takeovers and yacht/villa dinners reach a global tastemaker set.",
-    "sourceUrls": ["https://www.artbasel.com/miami-beach"]
+    "sourceUrls": [
+      "https://www.artbasel.com/miami-beach"
+    ]
   },
   {
     "id": "seed-pop-game-awards-2026",
@@ -508,11 +815,20 @@
     "impactScore": 7,
     "status": "projected",
     "announcedDate": "2026-05-21",
-    "headliners": ["Geoff Keighley", "World-premiere game reveals"],
+    "headliners": [
+      "Geoff Keighley",
+      "World-premiere game reveals"
+    ],
     "description": "The biggest night in gaming, watched live by tens of millions, increasingly a launchpad for game-x-fashion and hardware reveals.",
-    "commercialDrivers": ["Game publishers", "Hardware brands", "Streaming platforms"],
-    "partnershipAngle": "Gaming-audience scale with fashion crossover; a game-x-apparel tie-in reveal lands with huge concurrent reach.",
-    "sourceUrls": ["https://thegameawards.com"]
+    "commercialDrivers": [
+      "Game publishers",
+      "Hardware brands",
+      "Streaming platforms"
+    ],
+    "partnershipAngle": "For Spotify: gaming soundtracks are a fast-growing streaming category. Official score playlists and a 'sounds of the show' tie-in put Spotify in front of tens of millions of concurrent young viewers.",
+    "sourceUrls": [
+      "https://thegameawards.com"
+    ]
   },
   {
     "id": "seed-ent-dune-messiah",
@@ -523,11 +839,22 @@
     "impactScore": 10,
     "status": "confirmed",
     "announcedDate": "2026-02-10",
-    "headliners": ["Timothée Chalamet", "Zendaya", "Florence Pugh", "dir. Denis Villeneuve"],
+    "headliners": [
+      "Timothée Chalamet",
+      "Zendaya",
+      "Florence Pugh",
+      "dir. Denis Villeneuve"
+    ],
     "description": "Villeneuve closes his Dune trilogy in the prime holiday slot. The franchise's costume and production design have already driven multiple fashion editorials.",
-    "commercialDrivers": ["Warner Bros. / Legendary", "A-list cast", "IMAX"],
+    "commercialDrivers": [
+      "Warner Bros. / Legendary",
+      "A-list cast",
+      "IMAX"
+    ],
     "partnershipAngle": "Costume-driven aesthetic with proven fashion-editorial pull; premiere dressing and a beauty or fragrance tie-in fit the world.",
-    "sourceUrls": ["https://www.boxofficemojo.com"]
+    "sourceUrls": [
+      "https://www.boxofficemojo.com"
+    ]
   },
   {
     "id": "seed-innov-ces-2027",
@@ -539,11 +866,21 @@
     "impactScore": 8,
     "status": "confirmed",
     "announcedDate": "2026-05-07",
-    "headliners": ["Keynote stages", "AI & wearables", "Fashion-tech showcase"],
+    "headliners": [
+      "Keynote stages",
+      "AI & wearables",
+      "Fashion-tech showcase"
+    ],
     "description": "Las Vegas's tech megashow sets the year's consumer-hardware narrative, with a fast-growing fashion-tech and wearables presence.",
-    "commercialDrivers": ["CTA", "Global electronics brands", "Wearables startups"],
+    "commercialDrivers": [
+      "CTA",
+      "Global electronics brands",
+      "Wearables startups"
+    ],
     "partnershipAngle": "Beachhead for beauty-tech and fashion-tech category plays; early co-marketing positions a brand as an innovation patron.",
-    "sourceUrls": ["https://www.ces.tech"]
+    "sourceUrls": [
+      "https://www.ces.tech"
+    ]
   },
   {
     "id": "seed-ent-golden-globes-2027",
@@ -554,11 +891,20 @@
     "impactScore": 7,
     "status": "projected",
     "announcedDate": "2026-05-17",
-    "headliners": ["Film & TV nominees", "Red carpet"],
+    "headliners": [
+      "Film & TV nominees",
+      "Red carpet"
+    ],
     "description": "The loose, champagne-fueled awards-season opener — historically one of the most experimental and widely-covered red carpets of the year.",
-    "commercialDrivers": ["Broadcast network", "Studios & streamers", "Stylist agencies"],
+    "commercialDrivers": [
+      "Broadcast network",
+      "Studios & streamers",
+      "Stylist agencies"
+    ],
     "partnershipAngle": "Early awards-season dressing with a looser dress code invites bolder co-branded jewelry and gown moments.",
-    "sourceUrls": ["https://www.goldenglobes.com"]
+    "sourceUrls": [
+      "https://www.goldenglobes.com"
+    ]
   },
   {
     "id": "seed-fashion-couture-ss27",
@@ -570,11 +916,21 @@
     "impactScore": 10,
     "status": "projected",
     "announcedDate": "2026-05-23",
-    "headliners": ["Chanel", "Dior", "Schiaparelli", "Armani Privé"],
+    "headliners": [
+      "Chanel",
+      "Dior",
+      "Schiaparelli",
+      "Armani Privé"
+    ],
     "description": "The first couture week of 2027, where new creative directors' atelier visions are scrutinized at the highest level of the craft.",
-    "commercialDrivers": ["Fédération de la Haute Couture", "Couture maisons"],
+    "commercialDrivers": [
+      "Fédération de la Haute Couture",
+      "Couture maisons"
+    ],
     "partnershipAngle": "Couture front rows and atelier collaborations remain the apex earned-media multiplier of the fashion year.",
-    "sourceUrls": ["https://www.fhcm.paris"]
+    "sourceUrls": [
+      "https://www.fhcm.paris"
+    ]
   },
   {
     "id": "seed-ent-sundance-2027",
@@ -586,11 +942,20 @@
     "impactScore": 6,
     "status": "projected",
     "announcedDate": "2026-05-18",
-    "headliners": ["Independent premieres", "Acquisition-title bidding war"],
+    "headliners": [
+      "Independent premieres",
+      "Acquisition-title bidding war"
+    ],
     "description": "The premier US independent festival and a discovery engine for breakout directors, films, and the next wave of talent. First edition under its relocated host city.",
-    "commercialDrivers": ["Sundance Institute", "Indie distributors", "Streamers"],
+    "commercialDrivers": [
+      "Sundance Institute",
+      "Indie distributors",
+      "Streamers"
+    ],
     "partnershipAngle": "Discovery-positioned brands gain credibility supporting emerging filmmakers before the mainstream catches on.",
-    "sourceUrls": ["https://www.sundance.org"]
+    "sourceUrls": [
+      "https://www.sundance.org"
+    ]
   },
   {
     "id": "seed-ent-white-lotus-s4",
@@ -601,11 +966,21 @@
     "impactScore": 9,
     "status": "rumored",
     "announcedDate": "2026-05-26",
-    "headliners": ["Glen Powell (rumored lead)", "creator Mike White", "new resort setting"],
+    "headliners": [
+      "Glen Powell (rumored lead)",
+      "creator Mike White",
+      "new resort setting"
+    ],
     "description": "HBO's prestige satire returns to a new luxury resort. Casting buzz centers on a marquee lead — each season reliably turns its filming location and resortwear into a travel-and-fashion phenomenon.",
-    "commercialDrivers": ["HBO / Max", "Mike White", "Host resort & destination"],
-    "partnershipAngle": "Proven to drive resortwear, jewelry, and destination-travel demand; a wardrobe or hotel tie-in compounds across the season's rollout.",
-    "sourceUrls": ["https://www.hbo.com"]
+    "commercialDrivers": [
+      "HBO / Max",
+      "Mike White",
+      "Host resort & destination"
+    ],
+    "partnershipAngle": "For Spotify: each White Lotus season turns its score into a streaming phenomenon. An official soundtrack push, a 'sounds of the resort' playlist, and composer artist-page features capture demand the moment episodes drop.",
+    "sourceUrls": [
+      "https://www.hbo.com"
+    ]
   },
   {
     "id": "seed-pop-super-bowl-lxi",
@@ -616,11 +991,20 @@
     "impactScore": 10,
     "status": "projected",
     "announcedDate": "2026-05-24",
-    "headliners": ["Halftime headliner (TBC)", "Apple Music (presenter)"],
+    "headliners": [
+      "Halftime headliner (TBC)",
+      "Apple Music (presenter)"
+    ],
     "description": "The single largest live audience in US media. The halftime performance and its guest-and-wardrobe choices generate weeks of cultural and commercial aftershock.",
-    "commercialDrivers": ["NFL", "Apple Music", "Performing artist"],
-    "partnershipAngle": "Unmatched single-moment reach; halftime wardrobe and a tied-in merch or beauty drop convert instantly at national scale.",
-    "sourceUrls": ["https://www.nfl.com"]
+    "commercialDrivers": [
+      "NFL",
+      "Apple Music",
+      "Performing artist"
+    ],
+    "partnershipAngle": "For Tinder: game day is one of the year's biggest spikes in app activity. A halftime-tied 'who are you watching with' moment plus a second-screen social campaign plants Tinder inside the most-watched live window in US media.",
+    "sourceUrls": [
+      "https://www.nfl.com"
+    ]
   },
   {
     "id": "seed-pop-grammys-2027",
@@ -631,11 +1015,20 @@
     "impactScore": 8,
     "status": "projected",
     "announcedDate": "2026-05-20",
-    "headliners": ["Music's biggest night", "Red carpet & performances"],
+    "headliners": [
+      "Music's biggest night",
+      "Red carpet & performances"
+    ],
     "description": "Music's flagship awards night, pairing a heavily-styled red carpet with genre-spanning performances — a top-tier dressing and jewelry moment.",
-    "commercialDrivers": ["Recording Academy", "Labels", "Stylist agencies"],
-    "partnershipAngle": "Custom red-carpet and performance looks seed extended coverage; jewelry houses see outsized return here.",
-    "sourceUrls": ["https://www.grammy.com"]
+    "commercialDrivers": [
+      "Recording Academy",
+      "Labels",
+      "Stylist agencies"
+    ],
+    "partnershipAngle": "For Spotify: music's biggest night is the natural stage for Spotify's artist and fan data. Nominee playlists, 'This Is…' artist pages, and a Wrapped-style tie-in convert the broadcast's attention into streams and follows.",
+    "sourceUrls": [
+      "https://www.grammy.com"
+    ]
   },
   {
     "id": "seed-fashion-milan-fw27",
@@ -647,11 +1040,21 @@
     "impactScore": 9,
     "status": "projected",
     "announcedDate": "2026-05-22",
-    "headliners": ["Prada", "Gucci", "Bottega Veneta", "Fendi"],
+    "headliners": [
+      "Prada",
+      "Gucci",
+      "Bottega Veneta",
+      "Fendi"
+    ],
     "description": "The Fall/Winter 2027 Milan shows, a key checkpoint on how the houses' creative resets are landing commercially.",
-    "commercialDrivers": ["Camera Nazionale della Moda", "Italian luxury houses"],
+    "commercialDrivers": [
+      "Camera Nazionale della Moda",
+      "Italian luxury houses"
+    ],
     "partnershipAngle": "Show-set and front-row co-branding at one of the two most commercially decisive fashion capitals.",
-    "sourceUrls": ["https://www.cameramoda.it"]
+    "sourceUrls": [
+      "https://www.cameramoda.it"
+    ]
   },
   {
     "id": "seed-ent-oscars-2027",
@@ -662,11 +1065,20 @@
     "impactScore": 9,
     "status": "projected",
     "announcedDate": "2026-05-19",
-    "headliners": ["Best Picture nominees", "The red carpet"],
+    "headliners": [
+      "Best Picture nominees",
+      "The red carpet"
+    ],
     "description": "The pinnacle of the awards-season red carpet. A single Oscars look remains one of the highest-value placements in luxury fashion and jewelry.",
-    "commercialDrivers": ["AMPAS", "Studios & streamers", "Stylist agencies"],
+    "commercialDrivers": [
+      "AMPAS",
+      "Studios & streamers",
+      "Stylist agencies"
+    ],
     "partnershipAngle": "The most prestigious dressing moment of the year; couture and high-jewelry placements deliver maximum brand elevation.",
-    "sourceUrls": ["https://www.oscars.org"]
+    "sourceUrls": [
+      "https://www.oscars.org"
+    ]
   },
   {
     "id": "seed-fashion-paris-fw27",
@@ -678,11 +1090,21 @@
     "impactScore": 10,
     "status": "projected",
     "announcedDate": "2026-05-23",
-    "headliners": ["Chanel", "Louis Vuitton", "Saint Laurent", "Hermès"],
+    "headliners": [
+      "Chanel",
+      "Louis Vuitton",
+      "Saint Laurent",
+      "Hermès"
+    ],
     "description": "The FW27 womenswear finale in Paris, setting the commercial and editorial agenda for the back half of the year.",
-    "commercialDrivers": ["Fédération de la Haute Couture", "LVMH & Kering maisons"],
+    "commercialDrivers": [
+      "Fédération de la Haute Couture",
+      "LVMH & Kering maisons"
+    ],
     "partnershipAngle": "The most valuable front-row and show-production co-branding stage in the industry.",
-    "sourceUrls": ["https://www.fhcm.paris"]
+    "sourceUrls": [
+      "https://www.fhcm.paris"
+    ]
   },
   {
     "id": "seed-innov-sxsw-2027",
@@ -694,11 +1116,20 @@
     "impactScore": 7,
     "status": "projected",
     "announcedDate": "2026-05-14",
-    "headliners": ["Tech, film & music tracks", "Brand house activations"],
+    "headliners": [
+      "Tech, film & music tracks",
+      "Brand house activations"
+    ],
     "description": "Austin's convergence of tech, film, and music, and one of the most brand-activation-dense weeks in the US calendar.",
-    "commercialDrivers": ["SXSW", "Tech & media brands", "Experiential agencies"],
-    "partnershipAngle": "A branded house or pop-up at SXSW reaches a cross-industry tastemaker audience in a compressed window.",
-    "sourceUrls": ["https://www.sxsw.com"]
+    "commercialDrivers": [
+      "SXSW",
+      "Tech & media brands",
+      "Experiential agencies"
+    ],
+    "partnershipAngle": "For Spotify: SXSW is where Spotify House already breaks new artists. An expanded discovery stage and on-the-ground playlist drops reinforce Spotify's claim on emerging-music culture with the whole industry watching.",
+    "sourceUrls": [
+      "https://www.sxsw.com"
+    ]
   },
   {
     "id": "seed-art-tefaf-2027",
@@ -710,11 +1141,20 @@
     "impactScore": 7,
     "status": "projected",
     "announcedDate": "2026-05-12",
-    "headliners": ["Old Masters to design", "Connoisseur collectors"],
+    "headliners": [
+      "Old Masters to design",
+      "Connoisseur collectors"
+    ],
     "description": "The world's pre-eminent fair for fine art, antiques, and design, drawing the most traditional and discerning collector base of the year.",
-    "commercialDrivers": ["TEFAF", "Blue-chip dealers", "Heritage collectors"],
+    "commercialDrivers": [
+      "TEFAF",
+      "Blue-chip dealers",
+      "Heritage collectors"
+    ],
     "partnershipAngle": "The audience skews heritage-luxury; ideal for watch, jewelry, and craftsmanship-led houses.",
-    "sourceUrls": ["https://www.tefaf.com"]
+    "sourceUrls": [
+      "https://www.tefaf.com"
+    ]
   },
   {
     "id": "seed-art-salone-2027",
@@ -726,11 +1166,20 @@
     "impactScore": 8,
     "status": "projected",
     "announcedDate": "2026-05-10",
-    "headliners": ["Fuorisalone installations", "Luxury-house design projects"],
+    "headliners": [
+      "Fuorisalone installations",
+      "Luxury-house design projects"
+    ],
     "description": "The world's most important design week, where fashion and automotive houses increasingly stage ambitious spatial installations across Milan.",
-    "commercialDrivers": ["Salone del Mobile", "Design studios", "Luxury houses"],
-    "partnershipAngle": "Spatial, experiential storytelling at scale; a house installation signals creativity beyond product to a global design crowd.",
-    "sourceUrls": ["https://www.salonemilano.it"]
+    "commercialDrivers": [
+      "Salone del Mobile",
+      "Design studios",
+      "Luxury houses"
+    ],
+    "partnershipAngle": "For Target: design week sets the home-and-decor agenda Target sells against. A Target-exclusive designer home line, previewed via a Fuorisalone installation, brings of-the-moment design language to mass-market price points.",
+    "sourceUrls": [
+      "https://www.salonemilano.it"
+    ]
   },
   {
     "id": "seed-pop-coachella-2027",
@@ -742,11 +1191,21 @@
     "impactScore": 9,
     "status": "rumored",
     "announcedDate": "2026-05-27",
-    "headliners": ["Headliners (rumored)", "Desert-stage spectacle", "Brand activation circuit"],
+    "headliners": [
+      "Headliners (rumored)",
+      "Desert-stage spectacle",
+      "Brand activation circuit"
+    ],
     "description": "The defining festival-fashion moment of the year. The Coachella aesthetic and its sprawling brand-activation ecosystem drive a full spring trend cycle.",
-    "commercialDrivers": ["Goldenvoice / AEG", "Headline artists", "Brand activations"],
-    "partnershipAngle": "The original festival-fashion engine; a desert house, talent-seeding, and influencer dressing scale UGC enormously.",
-    "sourceUrls": ["https://www.coachella.com"]
+    "commercialDrivers": [
+      "Goldenvoice / AEG",
+      "Headline artists",
+      "Brand activations"
+    ],
+    "partnershipAngle": "For Spotify: Coachella is the natural flagship for Spotify's festival play. A returning on-site house, official lineup playlists, and artist-fan data moments make it the anchor of the spring music-discovery story and a direct driver of pre-festival streaming.",
+    "sourceUrls": [
+      "https://www.coachella.com"
+    ]
   },
   {
     "id": "seed-fashion-met-gala-2027",
@@ -757,11 +1216,21 @@
     "impactScore": 10,
     "status": "rumored",
     "announcedDate": "2026-05-28",
-    "headliners": ["Theme (TBC)", "Anna Wintour", "Celebrity co-chairs (TBC)"],
+    "headliners": [
+      "Theme (TBC)",
+      "Anna Wintour",
+      "Celebrity co-chairs (TBC)"
+    ],
     "description": "Fashion's biggest night and the most analyzed red carpet on earth. The exhibition theme dictates a year of design conversation; co-chair and look pairings are studied frame by frame.",
-    "commercialDrivers": ["The Met Costume Institute", "Vogue / Condé Nast", "Sponsoring maison"],
+    "commercialDrivers": [
+      "The Met Costume Institute",
+      "Vogue / Condé Nast",
+      "Sponsoring maison"
+    ],
     "partnershipAngle": "Dressing a co-chair or marquee attendee is the single highest-visibility fashion placement of the year; table sponsorship buys direct access.",
-    "sourceUrls": ["https://www.metmuseum.org"]
+    "sourceUrls": [
+      "https://www.metmuseum.org"
+    ]
   },
   {
     "id": "seed-ent-cannes-2027",
@@ -773,11 +1242,20 @@
     "impactScore": 9,
     "status": "projected",
     "announcedDate": "2026-05-25",
-    "headliners": ["Palme d'Or competition", "Croisette red carpet"],
+    "headliners": [
+      "Palme d'Or competition",
+      "Croisette red carpet"
+    ],
     "description": "The world's most prestigious film festival and the year's most glamorous sustained red carpet, where luxury houses and watch brands anchor official partnerships.",
-    "commercialDrivers": ["Festival de Cannes", "Chopard / Kering (partners)", "Global press"],
+    "commercialDrivers": [
+      "Festival de Cannes",
+      "Chopard / Kering (partners)",
+      "Global press"
+    ],
     "partnershipAngle": "Eleven days of high-glamour dressing; an official partnership or sustained talent-dressing program yields continuous coverage.",
-    "sourceUrls": ["https://www.festival-cannes.com"]
+    "sourceUrls": [
+      "https://www.festival-cannes.com"
+    ]
   },
   {
     "id": "seed-pop-eurovision-2027",
@@ -788,11 +1266,20 @@
     "impactScore": 7,
     "status": "projected",
     "announcedDate": "2026-05-21",
-    "headliners": ["National entrants", "Grand Final staging"],
+    "headliners": [
+      "National entrants",
+      "Grand Final staging"
+    ],
     "description": "Europe's camp, maximalist song spectacle, watched live by ~160M and a fast-growing destination for bold stage-fashion and brand integration.",
-    "commercialDrivers": ["EBU", "Host broadcaster", "National delegations"],
-    "partnershipAngle": "Pan-European reach with an audience that prizes spectacle; bold, expressive co-branded styling fits the format.",
-    "sourceUrls": ["https://eurovision.tv"]
+    "commercialDrivers": [
+      "EBU",
+      "Host broadcaster",
+      "National delegations"
+    ],
+    "partnershipAngle": "For Tinder: Eurovision is a pan-European, queer-friendly, watch-party phenomenon — exactly Tinder's audience. Country-by-country in-app prompts and viewing-party matching localize a single night across every Tinder market at once.",
+    "sourceUrls": [
+      "https://eurovision.tv"
+    ]
   },
   {
     "id": "seed-art-venice-biennale-2027",
@@ -804,11 +1291,19 @@
     "impactScore": 8,
     "status": "projected",
     "announcedDate": "2026-05-16",
-    "headliners": ["National pavilions", "Curator's central exhibition"],
+    "headliners": [
+      "National pavilions",
+      "Curator's central exhibition"
+    ],
     "description": "The opening weeks of the world's foremost architecture exhibition — institutional patronage that reads as the quietest, most credible form of luxury.",
-    "commercialDrivers": ["La Biennale di Venezia", "Heritage partners"],
+    "commercialDrivers": [
+      "La Biennale di Venezia",
+      "Heritage partners"
+    ],
     "partnershipAngle": "A commissioned pavilion or venue takeover lets a brand borrow institutional gravitas without overt logos.",
-    "sourceUrls": ["https://www.labiennale.org/en"]
+    "sourceUrls": [
+      "https://www.labiennale.org/en"
+    ]
   },
   {
     "id": "seed-art-basel-2027",
@@ -820,11 +1315,21 @@
     "impactScore": 9,
     "status": "projected",
     "announcedDate": "2026-05-13",
-    "headliners": ["Mega-galleries", "Unlimited sector", "UBS (Lead Partner)"],
+    "headliners": [
+      "Mega-galleries",
+      "Unlimited sector",
+      "UBS (Lead Partner)"
+    ],
     "description": "The 2027 flagship edition in Basel — once again the year's deepest pool of major-museum-grade work and top-tier collectors.",
-    "commercialDrivers": ["MCH Group", "UBS", "Blue-chip galleries"],
+    "commercialDrivers": [
+      "MCH Group",
+      "UBS",
+      "Blue-chip galleries"
+    ],
     "partnershipAngle": "Invite-only salon activations and patron-tier reveals reach the highest-net-worth audience of the year.",
-    "sourceUrls": ["https://www.artbasel.com"]
+    "sourceUrls": [
+      "https://www.artbasel.com"
+    ]
   },
   {
     "id": "seed-innov-wwdc-2027",
@@ -836,11 +1341,20 @@
     "impactScore": 8,
     "status": "projected",
     "announcedDate": "2026-05-09",
-    "headliners": ["Next-gen Apple Intelligence", "visionOS", "Tim Cook"],
+    "headliners": [
+      "Next-gen Apple Intelligence",
+      "visionOS",
+      "Tim Cook"
+    ],
     "description": "Apple's 2027 developer keynote, anchoring the early-summer tech news cycle and the platform roadmap for the year ahead.",
-    "commercialDrivers": ["Apple", "Developer ecosystem"],
+    "commercialDrivers": [
+      "Apple",
+      "Developer ecosystem"
+    ],
     "partnershipAngle": "Accessory and fashion-tech brands can ride a saturated launch window with a complementary, design-forward drop.",
-    "sourceUrls": ["https://developer.apple.com/wwdc"]
+    "sourceUrls": [
+      "https://developer.apple.com/wwdc"
+    ]
   },
   {
     "id": "seed-pop-glastonbury-2027",
@@ -852,10 +1366,19 @@
     "impactScore": 9,
     "status": "rumored",
     "announcedDate": "2026-05-26",
-    "headliners": ["Pyramid Stage headliners (rumored)", "Worthy Farm"],
+    "headliners": [
+      "Pyramid Stage headliners (rumored)",
+      "Worthy Farm"
+    ],
     "description": "Worthy Farm's flagship return after the fallow-year cycle, traditionally the UK summer's most culturally central music-and-style moment.",
-    "commercialDrivers": ["Festival organizers", "Headline artists", "BBC broadcast"],
-    "partnershipAngle": "Festival fashion plus the BBC's wall-to-wall coverage make talent-seeding and on-site lounges high-yield UGC drivers.",
-    "sourceUrls": ["https://www.glastonburyfestivals.co.uk"]
+    "commercialDrivers": [
+      "Festival organizers",
+      "Headline artists",
+      "BBC broadcast"
+    ],
+    "partnershipAngle": "For Spotify: pair the BBC's wall-to-wall coverage with official set playlists and artist-amplification placements so every Pyramid Stage moment routes back to a Spotify stream and a follow.",
+    "sourceUrls": [
+      "https://www.glastonburyfestivals.co.uk"
+    ]
   }
 ]
