@@ -1,13 +1,11 @@
 "use client";
 
 import { useMemo } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { CulturalEvent } from "@/lib/types";
 import { getCategory } from "@/lib/categories";
 import {
   buildMonthGrid,
   eventCoversDate,
-  MONTH_NAMES,
   toISO,
   WEEKDAY_LABELS,
 } from "@/lib/dates";
@@ -16,21 +14,19 @@ interface CalendarMatrixProps {
   year: number;
   month: number;
   events: CulturalEvent[];
-  onPrev: () => void;
-  onNext: () => void;
-  onToday: () => void;
   onSelect: (event: CulturalEvent) => void;
+  /** Jump to a specific day (e.g. clicking a date number opens Day view). */
+  onPickDate?: (date: Date) => void;
   selectedId?: string;
 }
 
+/** Month grid body (Sun→Sat). The nav header lives in the Dashboard. */
 export default function CalendarMatrix({
   year,
   month,
   events,
-  onPrev,
-  onNext,
-  onToday,
   onSelect,
+  onPickDate,
   selectedId,
 }: CalendarMatrixProps) {
   const cells = useMemo(() => buildMonthGrid(year, month), [year, month]);
@@ -50,37 +46,7 @@ export default function CalendarMatrix({
   }, [cells, events]);
 
   return (
-    <div className="rounded-lg border border-hairline bg-white">
-      {/* Month header */}
-      <div className="flex items-center justify-between border-b border-hairline px-5 py-4">
-        <h2 className="font-serif text-2xl text-ink">
-          {MONTH_NAMES[month]}{" "}
-          <span className="text-muted">{year}</span>
-        </h2>
-        <div className="flex items-center gap-1">
-          <button
-            onClick={onToday}
-            className="mr-2 rounded-full border border-hairline px-3 py-1 text-xs uppercase tracking-editorial text-ink transition-colors hover:bg-ink hover:text-paper"
-          >
-            Today
-          </button>
-          <button
-            onClick={onPrev}
-            aria-label="Previous month"
-            className="rounded-full p-2 text-muted transition-colors hover:bg-hairline hover:text-ink"
-          >
-            <ChevronLeft size={18} />
-          </button>
-          <button
-            onClick={onNext}
-            aria-label="Next month"
-            className="rounded-full p-2 text-muted transition-colors hover:bg-hairline hover:text-ink"
-          >
-            <ChevronRight size={18} />
-          </button>
-        </div>
-      </div>
-
+    <div>
       {/* Weekday labels */}
       <div className="grid grid-cols-7 border-b border-hairline">
         {WEEKDAY_LABELS.map((w) => (
@@ -111,17 +77,19 @@ export default function CalendarMatrix({
               }`}
             >
               <div className="mb-1.5 flex items-center justify-between">
-                <span
-                  className={`inline-flex h-7 w-7 items-center justify-center rounded-full text-sm tabular-nums ${
+                <button
+                  onClick={() => onPickDate?.(cell.date)}
+                  title="Open day"
+                  className={`inline-flex h-7 w-7 items-center justify-center rounded-full text-sm tabular-nums transition-colors ${
                     isToday
                       ? "bg-ink font-medium text-paper"
                       : cell.inMonth
-                        ? "text-ink"
-                        : "text-muted/50"
+                        ? "text-ink hover:bg-hairline"
+                        : "text-muted/50 hover:bg-hairline"
                   }`}
                 >
                   {cell.date.getDate()}
-                </span>
+                </button>
               </div>
 
               <div className="space-y-1">

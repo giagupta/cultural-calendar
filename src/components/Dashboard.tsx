@@ -3,8 +3,20 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { CulturalEvent, CategoryId } from "@/lib/types";
 import { CATEGORIES } from "@/lib/categories";
-import { eventCoversDate, parseISO, toISO } from "@/lib/dates";
+import {
+  addDays,
+  addMonths,
+  addYears,
+  MONTH_NAMES,
+  parseISO,
+  startOfWeek,
+  toISO,
+} from "@/lib/dates";
 import CalendarMatrix from "./CalendarMatrix";
+import CalendarHeader from "./CalendarHeader";
+import DayView from "./DayView";
+import WeekView from "./WeekView";
+import YearView from "./YearView";
 import AgendaView from "./AgendaView";
 import EventDetailPanel from "./EventDetailPanel";
 import FilterControls, { type ViewMode } from "./FilterControls";
@@ -18,16 +30,36 @@ interface DashboardProps {
 
 const ALL_CATEGORIES = new Set<CategoryId>(CATEGORIES.map((c) => c.id));
 
-/** Pick the calendar month to open on: the earliest upcoming event, else now. */
-function initialMonth(events: CulturalEvent[]): { year: number; month: number } {
+/** Open on the earliest upcoming event's date, else today. */
+function initialFocus(events: CulturalEvent[]): Date {
   const now = new Date();
   const todayISO = toISO(now);
   const upcoming = events
     .map((e) => e.startDate)
     .filter((d) => d >= todayISO)
     .sort()[0];
-  const ref = upcoming ? parseISO(upcoming) : now;
-  return { year: ref.getFullYear(), month: ref.getMonth() };
+  return upcoming ? parseISO(upcoming) : now;
+}
+
+/** Inclusive [from, to] ISO window covered by a view; null = all time. */
+function viewRange(view: ViewMode, focus: Date): { from: string; to: string } | null {
+  switch (view) {
+    case "day":
+      return { from: toISO(focus), to: toISO(focus) };
+    case "week": {
+      const start = startOfWeek(focus);
+      return { from: toISO(start), to: toISO(addDays(start, 6)) };
+    }
+    case "month": {
+      const first = new Date(focus.getFullYear(), focus.getMonth(), 1);
+      const last = new Date(focus.getFullYear(), focus.getMonth() + 1, 0);
+      return { from: toISO(first), to: toISO(last) };
+    }
+    case "year":
+      return { from: `${focus.getFullYear()}-01-01`, to: `${focus.getFullYear()}-12-31` };
+    default:
+      return null; // schedule = all time
+  }
 }
 
 export default function Dashboard({ initialEvents }: DashboardProps) {
@@ -41,9 +73,7 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
   const [syncing, setSyncing] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
 
-  const init = useMemo(() => initialMonth(initialEvents), [initialEvents]);
-  const [year, setYear] = useState(init.year);
-  const [month, setMonth] = useState(init.month);
+  const [focus, setFocus] = useState<Date>(() => initialFocus(initialEvents));
 
   const refetch = useCallback(async () => {
     try {
@@ -75,22 +105,17 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
     [categoryFiltered, minImpact],
   );
 
-  // In month view, the stat bar reflects the visible month; agenda reflects all.
+  // The stat bar / count reflect the events within the active view's window
+  // (schedule shows everything). An event counts if its span overlaps the range.
   const visible = useMemo(() => {
-    if (view === "agenda") return filtered;
-    return filtered.filter((e) => {
-      const d = parseISO(e.startDate);
-      const sameMonth = d.getFullYear() === year && d.getMonth() === month;
-      if (sameMonth) return true;
-      // include multi-day events that span into this month
-      const first = new Date(year, month, 1);
-      const last = new Date(year, month + 1, 0);
-      for (let day = new Date(first); day <= last; day.setDate(day.getDate() + 1)) {
-        if (eventCoversDate(e, day)) return true;
-      }
-      return false;
-    });
-  }, [filtered, view, year, month]);
+    const range = viewRange(view, focus);
+    if (!range) return filtered;
+    return filtered.filter(
+      (e) =>
+        e.startDate.slice(0, 10) <= range.to &&
+        (e.endDate ?? e.startDate).slice(0, 10) >= range.from,
+    );
+  }, [filtered, view, focus]);
 
   const toggleCategory = useCallback((id: CategoryId) => {
     setActiveCategories((prev) => {
@@ -125,20 +150,50 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
     }
   }, [refetch]);
 
-  const goPrev = () => {
-    const d = new Date(year, month - 1, 1);
-    setYear(d.getFullYear());
-    setMonth(d.getMonth());
+  const shift = (dir: 1 | -1) => {
+    setFocus((d) => {
+      if (view === "day") return addDays(d, dir);
+      if (view === "week") return addDays(d, dir * 7);
+      if (view === "year") return addYears(d, dir);
+      return addMonths(d, dir); // month (and any dated default)
+    });
   };
-  const goNext = () => {
-    const d = new Date(year, month + 1, 1);
-    setYear(d.getFullYear());
-    setMonth(d.getMonth());
+  const goPrev = () => shift(-1);
+  const goNext = () => shift(1);
+  const goToday = () => setFocus(new Date());
+
+  // Title for the shared nav header, per view.
+  const headerTitle = useMemo(() => {
+    switch (view) {
+      case "day":
+        return focus.toLocaleDateString("en-US", {
+          weekday: "long",
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        });
+      case "week": {
+        const s = startOfWeek(focus);
+        const e = addDays(s, 6);
+        const sameMonth = s.getMonth() === e.getMonth();
+        const left = s.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+        const right = (sameMonth ? e.getDate() : `${MONTH_NAMES[e.getMonth()].slice(0, 3)} ${e.getDate()}`);
+        return `${left} – ${right}, ${e.getFullYear()}`;
+      }
+      case "year":
+        return String(focus.getFullYear());
+      default:
+        return `${MONTH_NAMES[focus.getMonth()]} ${focus.getFullYear()}`;
+    }
+  }, [view, focus]);
+
+  const openDay = (date: Date) => {
+    setFocus(date);
+    setView("day");
   };
-  const goToday = () => {
-    const now = new Date();
-    setYear(now.getFullYear());
-    setMonth(now.getMonth());
+  const openMonth = (date: Date) => {
+    setFocus(date);
+    setView("month");
   };
 
   return (
@@ -168,7 +223,7 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
       </div>
 
       <div className="mb-8">
-        <StatBar events={view === "agenda" ? filtered : visible} />
+        <StatBar events={view === "schedule" ? filtered : visible} />
       </div>
 
       <div className="mb-8">
@@ -181,27 +236,61 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
           onMinImpactChange={setMinImpact}
           onSync={onSync}
           syncing={syncing}
-          resultCount={view === "agenda" ? filtered.length : visible.length}
+          resultCount={view === "schedule" ? filtered.length : visible.length}
         />
       </div>
 
-      {view === "month" ? (
-        <CalendarMatrix
-          year={year}
-          month={month}
-          events={filtered}
-          onPrev={goPrev}
-          onNext={goNext}
-          onToday={goToday}
-          onSelect={setSelected}
-          selectedId={selected?.id}
-        />
-      ) : (
+      {view === "schedule" ? (
         <AgendaView
           events={filtered}
           onSelect={setSelected}
           selectedId={selected?.id}
         />
+      ) : (
+        <div className="overflow-hidden rounded-lg border border-hairline bg-white">
+          <CalendarHeader
+            title={headerTitle}
+            subtitle={`${visible.length} event${visible.length === 1 ? "" : "s"} in view`}
+            onPrev={goPrev}
+            onNext={goNext}
+            onToday={goToday}
+          />
+          {view === "day" && (
+            <DayView
+              date={focus}
+              events={filtered}
+              onSelect={setSelected}
+              selectedId={selected?.id}
+            />
+          )}
+          {view === "week" && (
+            <WeekView
+              date={focus}
+              events={filtered}
+              onSelect={setSelected}
+              onPickDate={openDay}
+              selectedId={selected?.id}
+            />
+          )}
+          {view === "month" && (
+            <CalendarMatrix
+              year={focus.getFullYear()}
+              month={focus.getMonth()}
+              events={filtered}
+              onSelect={setSelected}
+              onPickDate={openDay}
+              selectedId={selected?.id}
+            />
+          )}
+          {view === "year" && (
+            <YearView
+              year={focus.getFullYear()}
+              events={filtered}
+              onPickDate={openDay}
+              onPickMonth={openMonth}
+            />
+          )}
+        </div>
       )}
 
       <EventDetailPanel event={selected} onClose={() => setSelected(null)} />

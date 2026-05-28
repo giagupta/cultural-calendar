@@ -1,10 +1,27 @@
 "use client";
 
-import { CalendarDays, List, RefreshCw, SlidersHorizontal } from "lucide-react";
+import {
+  CalendarClock,
+  CalendarDays,
+  CalendarRange,
+  LayoutGrid,
+  List,
+  RefreshCw,
+  SlidersHorizontal,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { CATEGORIES } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
 
-export type ViewMode = "month" | "agenda";
+export type ViewMode = "day" | "week" | "month" | "year" | "schedule";
+
+const VIEWS: { id: ViewMode; label: string; icon: LucideIcon }[] = [
+  { id: "day", label: "Day", icon: CalendarClock },
+  { id: "week", label: "Week", icon: CalendarRange },
+  { id: "month", label: "Month", icon: CalendarDays },
+  { id: "year", label: "Year", icon: LayoutGrid },
+  { id: "schedule", label: "Schedule", icon: List },
+];
 
 interface FilterControlsProps {
   view: ViewMode;
@@ -31,31 +48,29 @@ export default function FilterControls({
 }: FilterControlsProps) {
   return (
     <div className="space-y-5">
-      {/* View toggle + sync */}
+      {/* View switcher + sync */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="inline-flex overflow-hidden rounded-full border border-hairline">
-          <button
-            onClick={() => onViewChange("month")}
-            className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs uppercase tracking-editorial transition-colors ${
-              view === "month" ? "bg-ink text-paper" : "text-muted hover:text-ink"
-            }`}
-            aria-pressed={view === "month"}
-          >
-            <CalendarDays size={14} /> Month
-          </button>
-          <button
-            onClick={() => onViewChange("agenda")}
-            className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs uppercase tracking-editorial transition-colors ${
-              view === "agenda" ? "bg-ink text-paper" : "text-muted hover:text-ink"
-            }`}
-            aria-pressed={view === "agenda"}
-          >
-            <List size={14} /> Agenda
-          </button>
+        <div className="inline-flex flex-wrap overflow-hidden rounded-full border border-hairline">
+          {VIEWS.map((v) => {
+            const Icon = v.icon;
+            const active = view === v.id;
+            return (
+              <button
+                key={v.id}
+                onClick={() => onViewChange(v.id)}
+                aria-pressed={active}
+                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs uppercase tracking-editorial transition-colors ${
+                  active ? "bg-ink text-paper" : "text-muted hover:text-ink"
+                }`}
+              >
+                <Icon size={14} /> {v.label}
+              </button>
+            );
+          })}
         </div>
 
         <div className="flex items-center gap-3">
-          <span className="text-xs text-muted">{resultCount} events</span>
+          <span className="text-sm text-muted">{resultCount} events</span>
           <button
             onClick={onSync}
             disabled={syncing}

@@ -158,9 +158,10 @@ src/
       [id]/route.ts           # GET / PUT / DELETE
       sync/route.ts           # POST ingestion trigger
   components/
-    Dashboard.tsx             # client orchestrator (state, fetch, sync)
-    CalendarMatrix.tsx        # month grid view
-    AgendaView.tsx            # list / agenda view (with headliners + status)
+    Dashboard.tsx             # client orchestrator (state, focus date, views)
+    CalendarHeader.tsx        # shared title + prev/next/today nav bar
+    DayView.tsx  WeekView.tsx  CalendarMatrix.tsx (month)  YearView.tsx
+    AgendaView.tsx            # schedule view (with headliners + status)
     AnnouncementsRail.tsx     # cross-time "Recent Announcements" feed
     EventDetailPanel.tsx      # slide-in panel (angle, drivers, headliners, desc)
     FilterControls.tsx        # view toggle, category + impact filters, sync
@@ -177,8 +178,11 @@ src/
 
 ## Features
 
-- **Month matrix** and **list/agenda** views, toggled in place, spanning a
-  full year of cultural dates.
+- **Five calendar views**, mirroring Google Calendar — **Day, Week, Month,
+  Year, and Schedule** — switched in place via a segmented control. A shared
+  nav bar moves prev/next/today by the active unit; clicking a date number (in
+  Month/Week) or a day (in Year) jumps to Day view, and a Year month-name jumps
+  to Month view.
 - **Recent Announcements** rail — a cross-time feed sorted by `announcedDate`,
   so far-future events (next year's festivals, casting news) surface the moment
   they break. Each card shows confidence (Confirmed / Rumored / Projected),

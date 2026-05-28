@@ -20,6 +20,36 @@ export function toISO(date: Date): string {
   return `${y}-${m}-${d}`;
 }
 
+export function addDays(date: Date, n: number): Date {
+  const d = new Date(date);
+  d.setDate(d.getDate() + n);
+  return d;
+}
+
+/** Add months, clamping the day so e.g. Jan 31 + 1 month → Feb 28/29. */
+export function addMonths(date: Date, n: number): Date {
+  const d = new Date(date.getFullYear(), date.getMonth() + n, 1);
+  const lastDay = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+  d.setDate(Math.min(date.getDate(), lastDay));
+  return d;
+}
+
+export function addYears(date: Date, n: number): Date {
+  return addMonths(date, n * 12);
+}
+
+/** Sunday on or before the given date. */
+export function startOfWeek(date: Date): Date {
+  const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  return addDays(d, -d.getDay());
+}
+
+/** The seven days (Sun→Sat) of the week containing `date`. */
+export function weekDays(date: Date): Date[] {
+  const start = startOfWeek(date);
+  return Array.from({ length: 7 }, (_, i) => addDays(start, i));
+}
+
 export function isSameDay(iso: string, date: Date): boolean {
   return iso.slice(0, 10) === toISO(date);
 }
