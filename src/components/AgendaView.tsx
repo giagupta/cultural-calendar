@@ -6,6 +6,7 @@ import type { CulturalEvent } from "@/lib/types";
 import { getCategory } from "@/lib/categories";
 import { formatDateRange, MONTH_NAMES, parseISO } from "@/lib/dates";
 import ImpactMeter from "./ImpactMeter";
+import StatusBadge from "./StatusBadge";
 
 interface AgendaViewProps {
   events: CulturalEvent[];
@@ -68,9 +69,20 @@ export default function AgendaView({ events, onSelect, selectedId }: AgendaViewP
                     </div>
 
                     <div className="min-w-0 flex-1">
-                      <p className="truncate text-[15px] text-ink">{e.title}</p>
+                      <p className="flex items-center gap-2 truncate text-[15px] text-ink">
+                        <span className="truncate">{e.title}</span>
+                        {e.status && e.status !== "confirmed" && (
+                          <StatusBadge status={e.status} className="shrink-0" />
+                        )}
+                      </p>
                       <p className="truncate text-xs text-muted">
                         {cat.emoji} {cat.label} · {e.subCategory}
+                        {e.headliners && e.headliners.length > 0 && (
+                          <span className="text-ink/70">
+                            {" · "}
+                            {e.headliners.slice(0, 3).join(", ")}
+                          </span>
+                        )}
                       </p>
                     </div>
 

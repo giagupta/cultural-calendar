@@ -10,6 +10,7 @@ import EventDetailPanel from "./EventDetailPanel";
 import FilterControls, { type ViewMode } from "./FilterControls";
 import CategoryLegend from "./CategoryLegend";
 import StatBar from "./StatBar";
+import AnnouncementsRail from "./AnnouncementsRail";
 
 interface DashboardProps {
   initialEvents: CulturalEvent[];
@@ -62,12 +63,16 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
     if (fresh && fresh !== selected) setSelected(fresh);
   }, [events, selected]);
 
+  // Category-only set powers the cross-time announcements feed (ignores the
+  // impact slider and month navigation by design).
+  const categoryFiltered = useMemo(
+    () => events.filter((e) => activeCategories.has(e.category)),
+    [events, activeCategories],
+  );
+
   const filtered = useMemo(
-    () =>
-      events
-        .filter((e) => activeCategories.has(e.category))
-        .filter((e) => e.impactScore >= minImpact),
-    [events, activeCategories, minImpact],
+    () => categoryFiltered.filter((e) => e.impactScore >= minImpact),
+    [categoryFiltered, minImpact],
   );
 
   // In month view, the stat bar reflects the visible month; agenda reflects all.
@@ -151,6 +156,14 @@ export default function Dashboard({ initialEvents }: DashboardProps) {
           <CategoryLegend />
         </div>
       </header>
+
+      <div className="mb-8">
+        <AnnouncementsRail
+          events={categoryFiltered}
+          onSelect={setSelected}
+          selectedId={selected?.id}
+        />
+      </div>
 
       <div className="mb-8">
         <StatBar events={view === "agenda" ? filtered : visible} />

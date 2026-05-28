@@ -55,6 +55,37 @@ export function buildMonthGrid(year: number, month: number): CalendarCell[] {
   return cells;
 }
 
+/** Human-friendly "how long ago was this announced" label. */
+export function relativeAnnounced(iso: string, now: Date = new Date()): string {
+  const then = parseISO(iso);
+  const days = Math.round(
+    (new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime() -
+      then.getTime()) /
+      86_400_000,
+  );
+  if (days <= 0) return "Today";
+  if (days === 1) return "Yesterday";
+  if (days < 7) return `${days}d ago`;
+  if (days < 30) return `${Math.floor(days / 7)}w ago`;
+  if (days < 365) return `${Math.floor(days / 30)}mo ago`;
+  return `${Math.floor(days / 365)}y ago`;
+}
+
+/** Compact lead-time label, e.g. "Lands Apr 2027" / "Lands in 3 weeks". */
+export function leadTimeLabel(iso: string, now: Date = new Date()): string {
+  const start = parseISO(iso);
+  const days = Math.round(
+    (start.getTime() -
+      new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime()) /
+      86_400_000,
+  );
+  if (days < 0) return "Underway";
+  if (days === 0) return "Today";
+  if (days < 14) return `In ${days}d`;
+  if (days < 60) return `In ${Math.floor(days / 7)}w`;
+  return `${MONTH_NAMES[start.getMonth()].slice(0, 3)} ${start.getFullYear()}`;
+}
+
 export function formatDateRange(event: CulturalEvent): string {
   const start = parseISO(event.startDate);
   const startStr = start.toLocaleDateString("en-US", {

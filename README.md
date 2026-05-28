@@ -74,9 +74,18 @@ interface CulturalEvent {
   commercialDrivers: string[];// actors, designers, parent corps, agencies
   partnershipAngle: string;   // why it matters for co-branding
   sourceUrls: string[];
-  source?: 'curated' | 'ingested'; // provenance (curated is never overwritten)
+  source?: 'curated' | 'ingested';      // provenance (curated is never overwritten)
+  announcedDate?: string;               // ISO date the news broke → powers the announcements feed
+  headliners?: string[];                // named lineup / cast / creators (the niche detail)
+  description?: string;                  // short editorial context note
+  status?: 'confirmed' | 'rumored' | 'projected'; // confidence in the specifics
 }
 ```
+
+The seed dataset spans **June 2026 → June 2027** (~55 events) with specific
+headliners and cast (e.g. Nolan's *The Odyssey*, *Dune: Part Three*, Met Gala
+2027, Coachella 2027), each tagged with a confidence level so speculative
+far-out lineups read honestly rather than as fact.
 
 ---
 
@@ -151,10 +160,11 @@ src/
   components/
     Dashboard.tsx             # client orchestrator (state, fetch, sync)
     CalendarMatrix.tsx        # month grid view
-    AgendaView.tsx            # list / agenda view
-    EventDetailPanel.tsx      # slide-in side panel (partnership angle + drivers)
+    AgendaView.tsx            # list / agenda view (with headliners + status)
+    AnnouncementsRail.tsx     # cross-time "Recent Announcements" feed
+    EventDetailPanel.tsx      # slide-in panel (angle, drivers, headliners, desc)
     FilterControls.tsx        # view toggle, category + impact filters, sync
-    CategoryLegend.tsx  StatBar.tsx  ImpactMeter.tsx
+    CategoryLegend.tsx  StatBar.tsx  ImpactMeter.tsx  StatusBadge.tsx
   lib/
     types.ts                  # CulturalEvent contract
     categories.ts             # taxonomy + color tokens
@@ -167,11 +177,19 @@ src/
 
 ## Features
 
-- **Month matrix** and **list/agenda** views, toggled in place.
+- **Month matrix** and **list/agenda** views, toggled in place, spanning a
+  full year of cultural dates.
+- **Recent Announcements** rail — a cross-time feed sorted by `announcedDate`,
+  so far-future events (next year's festivals, casting news) surface the moment
+  they break. Each card shows confidence (Confirmed / Rumored / Projected),
+  how long ago it was announced, and the lead time until it lands. Respects the
+  category toggles but is independent of the impact slider and month navigation.
 - **Strict color-coding** across the five pillars, consistent everywhere.
 - **Filtering** by any combination of categories and a 1–10 impact threshold.
-- **Detail side panel** that surfaces `partnershipAngle` and
-  `commercialDrivers` immediately on selection.
+- **Detail side panel** that surfaces `partnershipAngle`, `commercialDrivers`,
+  the `description`, and named **headliners/talent** immediately on selection,
+  plus a confidence badge and when the news was announced.
 - **Sync trends** button wired to the live ingestion endpoint, with a summary
-  toast and curated-event protection.
+  toast and curated-event protection. Ingested discoveries arrive stamped with
+  today's `announcedDate`, so they appear in the announcements rail.
 - **Summary stat bar**: tracked events, average/high impact, active pillars.

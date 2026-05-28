@@ -186,6 +186,10 @@ function generateTrendBatch(count, now) {
       partnershipAngle: angle,
       sourceUrls: [tpl.source],
       source: "ingested",
+      announcedDate: isoDate(now),
+      status: "projected",
+      description:
+        "Surfaced by the automated trend pipeline. Details are projected and firm up as the date approaches.",
     });
   }
   return batch;

@@ -110,6 +110,10 @@ function normalize(input: NewCulturalEvent): Omit<CulturalEvent, "id" | "source"
   if (Number.isNaN(impact) || impact < 1 || impact > 10) {
     throw new Error("`impactScore` must be a number between 1 and 10");
   }
+  const status =
+    input.status === "rumored" || input.status === "projected"
+      ? input.status
+      : "confirmed";
   return {
     title: input.title.trim(),
     category: input.category,
@@ -122,6 +126,10 @@ function normalize(input: NewCulturalEvent): Omit<CulturalEvent, "id" | "source"
       : [],
     partnershipAngle: input.partnershipAngle ?? "",
     sourceUrls: Array.isArray(input.sourceUrls) ? input.sourceUrls : [],
+    announcedDate: input.announcedDate,
+    headliners: Array.isArray(input.headliners) ? input.headliners : [],
+    description: input.description ?? "",
+    status,
   };
 }
 

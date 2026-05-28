@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { Handshake, Link2, Users, X } from "lucide-react";
+import { Handshake, Link2, Megaphone, Sparkles, Users, X } from "lucide-react";
 import type { CulturalEvent } from "@/lib/types";
 import { getCategory } from "@/lib/categories";
-import { formatDateRange } from "@/lib/dates";
+import { formatDateRange, parseISO, relativeAnnounced } from "@/lib/dates";
 import ImpactMeter from "./ImpactMeter";
+import StatusBadge from "./StatusBadge";
 
 interface EventDetailPanelProps {
   event: CulturalEvent | null;
@@ -56,11 +57,14 @@ export default function EventDetailPanel({ event, onClose }: EventDetailPanelPro
 
             <div className="flex items-start justify-between gap-4 px-7 pt-6">
               <div className="space-y-2">
-                <span
-                  className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] uppercase tracking-editorial ${cat.chipClass}`}
-                >
-                  {cat.emoji} {cat.label}
-                </span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span
+                    className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] uppercase tracking-editorial ${cat.chipClass}`}
+                  >
+                    {cat.emoji} {cat.label}
+                  </span>
+                  <StatusBadge status={event.status} />
+                </div>
                 <p className="eyebrow">{event.subCategory}</p>
               </div>
               <button
@@ -77,6 +81,44 @@ export default function EventDetailPanel({ event, onClose }: EventDetailPanelPro
                 {event.title}
               </h2>
               <p className="mt-2 text-sm text-muted">{formatDateRange(event)}</p>
+
+              {event.announcedDate && (
+                <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs text-muted">
+                  <Megaphone size={13} />
+                  Announced {relativeAnnounced(event.announcedDate)} ·{" "}
+                  {parseISO(event.announcedDate).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </p>
+              )}
+
+              {event.description && (
+                <p className="mt-4 text-[15px] leading-relaxed text-ink/90">
+                  {event.description}
+                </p>
+              )}
+
+              {/* Headliners / cast / lineup — the niche detail */}
+              {event.headliners && event.headliners.length > 0 && (
+                <section className="mt-6">
+                  <div className="mb-2 flex items-center gap-2">
+                    <Sparkles size={15} className="text-ink" />
+                    <h3 className="eyebrow text-ink">Headliners &amp; talent</h3>
+                  </div>
+                  <ul className="flex flex-wrap gap-2">
+                    {event.headliners.map((h, i) => (
+                      <li
+                        key={i}
+                        className={`rounded-full px-3 py-1 text-xs ${cat.chipClass}`}
+                      >
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
 
               {/* Impact */}
               <div className="mt-6 flex items-center justify-between border-y border-hairline py-4">

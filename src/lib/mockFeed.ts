@@ -173,6 +173,11 @@ export function generateTrendBatch(options: BatchOptions = {}): NewCulturalEvent
       partnershipAngle: angle,
       sourceUrls: [tpl.source],
       source: "ingested",
+      // Freshly-discovered by the pipeline → surfaces in the announcements feed.
+      announcedDate: isoDate(now),
+      status: "projected",
+      description:
+        "Surfaced by the automated trend pipeline. Details are projected and firm up as the date approaches.",
     });
   }
   return batch;

@@ -13,6 +13,13 @@ export type CategoryId =
   | "innovation"
   | "pop-culture";
 
+/**
+ * Confidence level on the specific detail (lineup, cast, dates) attached to an
+ * event. Far-out events are often "rumored" or "projected" before they firm up
+ * into "confirmed" — surfacing this keeps the intelligence honest.
+ */
+export type EventStatus = "confirmed" | "rumored" | "projected";
+
 export interface CulturalEvent {
   id: string;
   title: string;
@@ -36,6 +43,17 @@ export interface CulturalEvent {
    * by the automated sync pipeline; ingested events may be refreshed.
    */
   source?: "curated" | "ingested";
+  /**
+   * ISO date the event/news broke. Powers the "Recent Announcements" feed,
+   * letting far-future events surface as soon as they're announced.
+   */
+  announcedDate?: string;
+  /** Named, niche detail: festival headliners, film cast, show creators. */
+  headliners?: string[];
+  /** Short editorial note with the surrounding context that matters. */
+  description?: string;
+  /** Confidence in the specific detail above. Defaults to "confirmed". */
+  status?: EventStatus;
 }
 
 /** Payload accepted when creating an event (id + source are assigned server-side). */
