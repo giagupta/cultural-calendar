@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Helvetica Neue", "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Times New Roman", Georgia, "Playfair Display", serif;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: theme("colors.paper");
+    color: theme("colors.ink");
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Editorial section eyebrow */
+  .eyebrow {
+    @apply text-[11px] uppercase tracking-editorial text-muted;
+  }
+}
+
+@layer utilities {
+  .hairline-border {
+    border-color: theme("colors.hairline");
+  }
+}
+
+/* Subtle scrollbar that matches the editorial palette */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d4cd;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c4bfb6;
+}
